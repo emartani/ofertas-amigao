@@ -9,6 +9,19 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
     <head>
         <meta charset="UTF-8">
         <title>Produtos Extraídos</title>
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0X4P4ZM0RC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0X4P4ZM0RC');
+        </script>
+
+        <!-- Plausible Analytics -->
+        <script defer data-domain="SEU_DOMINIO" src="https://plausible.io/js/script.js"></script>
+
         <style>
             body { font-family: Arial, sans-serif; background-color: #fafafa; margin: 20px; color: #333; }
             h1 { text-align: center; color: #006400; }
@@ -24,6 +37,8 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
             .preco-usado { font-style: italic; color: #555; }
         </style>
     </head>
+
+
     <body>
     <h1 id="titulo">Produtos Extraídos - Ordenados por Maior Desconto</h1>
     <div class="botoes">
