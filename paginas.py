@@ -20,7 +20,7 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
         </script>
 
         <!-- Plausible Analytics -->
-        <script defer data-domain="SEU_DOMINIO" src="https://plausible.io/js/script.js"></script>
+        <script defer data-domain="emartani.github.io" src="https://plausible.io/js/script.js"></script>
 
         <style>
             body { font-family: Arial, sans-serif; background-color: #fafafa; margin: 20px; color: #333; }
@@ -64,7 +64,7 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
         <tr>
             <td>{p['nome']}</td>
             <td>{p['peso']}</td>
-            <td>{p['preco_clube'].replace(" no + Amigo", "")}</td>
+            <td>{p['preco_clube']}</td>
             <td>{p['preco_antigo']}</td>
             <td>{p['preco_novo']}</td>
             <td class="desconto">{p['desconto']}</td>
@@ -163,4 +163,4 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
     with open(arquivo, "w", encoding="utf-8") as f:
         f.write(html)
 
-    webbrowser.open(arquivo)
+    # webbrowser.open(arquivo)
