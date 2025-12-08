@@ -10,7 +10,7 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
         <meta charset="UTF-8">
         <title>Produtos Extraídos</title>
         
-        <!-- Google tag (gtag.js) -->
+        <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0X4P4ZM0RC"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -35,15 +35,16 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
             tr:nth-child(even) { background-color: #f2f2f2; }
             .desconto { font-weight: bold; color: #d32f2f; }
             .preco-usado { font-style: italic; color: #555; }
+            .categoria-header { background-color: #ddd; font-weight: bold; text-align: center; }
         </style>
     </head>
-
 
     <body>
     <h1 id="titulo">Produtos Extraídos - Ordenados por Maior Desconto</h1>
     <div class="botoes">
         <button onclick="ordenarDesconto()">Ordenados por Maior Desconto</button>
         <button onclick="ordenarPreco()">Ordenados por Menor Valor</button>
+        <button onclick="ordenarCategoria()">Ordenados por Categoria</button>
     </div>
     <input type="text" id="busca" placeholder="Buscar produto...">
     <table id="tabela">
@@ -61,7 +62,7 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
     # Preenche tabela inicial (ordenada por desconto)
     for p in produtos_ordenados:
         html += f"""
-        <tr>
+        <tr data-categoria="{p['categoria']}">
             <td>{p['nome']}</td>
             <td>{p['peso']}</td>
             <td>{p['preco_clube']}</td>
@@ -131,7 +132,6 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
             return va.valor - vb.valor;
         });
         linhas.forEach(l => tabela.appendChild(l));
-        // Atualiza coluna "Preço usado"
         linhas.forEach(l => {
             let info = extrairPreco(l);
             l.cells[6].textContent = info.tipo + " (" + info.valor.toFixed(2) + ")";
@@ -155,6 +155,52 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
             tr.cells[6].textContent = valor;
         });
     }
+
+    // Ordenar e agrupar por categoria
+    function ordenarCategoria() {
+        const tabela = document.getElementById("tabela");
+        let linhas = Array.from(tabela.rows).slice(1);
+
+        // ordem fixa das categorias
+        const ordemCategorias = ["açougue", "bebidas", "mercearia", "hortifuti", "limpeza", "outros"];
+
+        // agrupar por categoria
+        let grupos = {};
+        linhas.forEach(l => {
+            let cat = l.getAttribute("data-categoria") || "outros";
+            if (!grupos[cat]) grupos[cat] = [];
+            grupos[cat].push(l);
+        });
+
+        // limpar tabela
+        linhas.forEach(l => tabela.removeChild(l));
+
+        // reordenar e inserir
+        ordemCategorias.forEach(cat => {
+            if (grupos[cat]) {
+                // inserir cabeçalho da categoria
+                let header = document.createElement("tr");
+                let cell = document.createElement("td");
+                cell.colSpan = 7;
+                cell.textContent = cat.toUpperCase();
+                cell.className = "categoria-header";
+                header.appendChild(cell);
+                tabela.appendChild(header);
+
+                // ordenar por desconto dentro da categoria
+                grupos[cat].sort((a, b) => {
+                    let va = parseInt(a.cells[5].textContent.replace('%','')) || 0;
+                    let vb = parseInt(b.cells[5].textContent.replace('%','')) || 0;
+                    return vb - va;
+                });
+
+                grupos[cat].forEach(l => tabela.appendChild(l));
+            }
+        });
+
+        document.getElementById("titulo").textContent = "Produtos Extraídos - Ordenados por Categoria";
+        atualizarPrecoUsado("-");
+    }
     </script>
     </body>
     </html>
@@ -163,4 +209,4 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
     with open(arquivo, "w", encoding="utf-8") as f:
         f.write(html)
 
-    # webbrowser.open(arquivo)
+    webbrowser.open(arquivo)

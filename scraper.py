@@ -4,12 +4,13 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import time
 from bs4 import BeautifulSoup
-from classificacao import classificar_categoria
+from classificacao import detectar_categoria  # função inteligente
 
 def extrair_produtos(chromedriver_path="C:/chromedriver/chromedriver.exe"):
     options = Options()
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
+    #options.add_argument("--headless")  # opcional: rodar sem abrir janela
 
     driver = webdriver.Chrome(service=Service(chromedriver_path), options=options)
     url = "https://www.amigao.com/s/?clubProducts"
@@ -59,14 +60,13 @@ def extrair_produtos(chromedriver_path="C:/chromedriver/chromedriver.exe"):
                 desconto_valor = 0
 
         nome_texto = nome.get_text(strip=True) if nome else "Sem nome"
-        categoria = classificar_categoria(nome_texto)
+        categoria = detectar_categoria(nome_texto)  # <<< classificação automática
 
         produtos.append({
             "nome": nome_texto,
             "peso": peso.get_text(strip=True) if peso else "",
             "desconto": desconto.get_text(strip=True) if desconto else "",
             "desconto_valor": desconto_valor,
-            # limpa " no + Amigo" já na coleta
             "preco_clube": preco_clube.get_text(strip=True).replace(" no + Amigo", "") if preco_clube else "",
             "preco_antigo": preco_antigo.get_text(strip=True) if preco_antigo else "",
             "preco_novo": preco_novo.get_text(strip=True) if preco_novo else "Sem preço",
@@ -74,3 +74,8 @@ def extrair_produtos(chromedriver_path="C:/chromedriver/chromedriver.exe"):
         })
 
     return produtos
+
+if __name__ == "__main__":
+    lista = extrair_produtos()
+    for p in lista[:20]:
+        print(p["nome"], "=>", p["categoria"])

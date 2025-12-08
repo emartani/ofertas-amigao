@@ -1,22 +1,34 @@
-def classificar_categoria(nome):
-    nome = nome.lower()
-    if any(p in nome for p in ["carne", "frango", "peixe", "bife", "linguiça", "costela", "porco", "hamburguer"]):
-        return "Açougue"
-    elif any(p in nome for p in ["detergente", "sabão", "desinfetante", "limpeza", "amaciante", "candida", "multiuso"]):
-        return "Limpeza"
-    elif any(p in nome for p in ["arroz", "feijão", "macarrão", "açúcar", "café", "óleo", "farinha", "molho", "sal"]):
-        return "Mercearia"
-    elif any(p in nome for p in ["banana", "maçã", "limão", "laranja", "uva", "batata", "tomate", "cenoura", "alface"]):
-        return "Hortifruti"
-    elif any(p in nome for p in ["cerveja", "vinho", "refrigerante", "suco", "água", "whisky", "vodka"]):
-        return "Bebidas"
-    elif any(p in nome for p in ["pão", "bolo", "biscoito", "croissant", "torta"]):
-        return "Padaria"
-    elif any(p in nome for p in ["leite", "queijo", "manteiga", "iogurte", "requeijão", "creme de leite"]):
-        return "Laticínios"
-    elif any(p in nome for p in ["pizza", "lasanha", "sorvete", "nuggets", "hamburguer congelado"]):
-        return "Congelados"
-    elif any(p in nome for p in ["shampoo", "condicionador", "sabonete", "creme dental", "desodorante", "higiene"]):
-        return "Higiene Pessoal"
-    else:
-        return "Outros"
+def detectar_categoria(nome_produto: str) -> str:
+    nome = nome_produto.lower()
+
+    # --- Regras de exceção ---
+    if any(p in nome for p in ["cães", "ração", "dog chow", "friskies", "kitekat", "purina", "whiskas"]):
+        return "outros"
+    if any(p in nome for p in ["escova dental", "absorvente", "condicionador", "shampoo", "creme dental", "desodorante"]):
+        return "outros"
+    if any(p in nome for p in ["calda", "creme", "manteiga", "iogurte", "achocolatado", "wafer", "chocolate", "cappuccino", "lasanha", "caldo", "pizza", "papel alumínio", "copo", "esponja", "guardanapo", "talher", "prato descartável", "papel higiênico", "fralda", "lenço", "toalha", "higiene"]):
+        return "outros"
+
+    # --- Açougue ---
+    if any(p in nome for p in ["carne", "frango", "bovino", "suíno", "peixe", "atum", "salmão", "cordeiro", "linguiça", "presunto", "hamburguer"]):
+        return "açougue"
+
+    # --- Limpeza ---
+    if any(p in nome for p in ["detergente", "sabão", "desinfetante", "inseticida", "limpador", "amaciante", "alvejante", "lysoform", "omo", "vanish", "veja", "pinho sol", "raid", "girando sol"]):
+        return "limpeza"
+
+    # --- Mercearia ---
+    if any(p in nome for p in ["salgadinho", "sardinha", "extrato", "canjiquinha", "pringles", "chips", "gelatina", "farofa", "doce", "leite condensado", "chocolate ao leite", "rosquinha", "atum", "arroz", "feijão", "macarrão", "massa", "farinha", "biscoito", "torrada", "pão", "chocolate", "nutella", "azeitona", "maionese", "cereal", "panettone", "margarina", "queijo", "bolacha", "mistura", "aveia", "café", "polenguinho", "batata palha", "molho", "condimento", "tempero", "granulado"]):
+        return "mercearia"
+        
+    # --- Bebidas ---
+    if any(p in nome for p in ["isotônico", "Refresco ", "cerveja", "vinho", "espumante", "suco", "bebida", "leite", "refrigerante", "chá", "água", "energético", "batavo", "italac", "ades"]):
+        return "bebidas"
+
+    # --- Hortifuti ---
+    if any(p in nome for p in ["pessego", "abóbora", "alface", "limão", "milho", "cenoura", "laranja", "ervilha", "batata", "manga", "uva", "cereja", "banana", "maçã", "tomate", "pêssego", "pepino", "couve", "brócolis"]):
+        return "hortifuti"
+
+
+
+    return "outros"
