@@ -9,15 +9,6 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
     <head>
         <meta charset="UTF-8">
         <title>Produtos Extraídos</title>
-        
-        <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0X4P4ZM0RC"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0X4P4ZM0RC');
-        </script>
 
         <!-- Plausible Analytics -->
         <script defer data-domain="emartani.github.io" src="https://plausible.io/js/script.js"></script>
@@ -38,6 +29,15 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
             .categoria-header { background-color: #ddd; font-weight: bold; text-align: center; }
         </style>
     </head>
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0X4P4ZM0RC"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0X4P4ZM0RC');
+        </script>
 
     <body>
     <h1 id="titulo">Produtos Extraídos - Ordenados por Maior Desconto</h1>
