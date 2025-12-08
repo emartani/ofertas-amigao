@@ -1,10 +1,4 @@
-import webbrowser
 
-def gerar_tabela(produtos, arquivo="index.html"):
-    # Ordenação inicial: maior desconto
-    produtos_ordenados = sorted(produtos, key=lambda x: -x["desconto_valor"])
-
-    html = """
     <html>
     <head>
         <meta charset="UTF-8">
@@ -65,28 +59,212 @@ def gerar_tabela(produtos, arquivo="index.html"):
             <th>Desconto</th>
             <th>Preço usado</th>
         </tr>
-    """
-
-    # Preenche tabela inicial (ordenada por desconto)
-    for p in produtos_ordenados:
-        html += f"""
-        <tr data-categoria="{p['categoria']}">
-            <td>{p['nome']}</td>
-            <td>{p['peso']}</td>
-            <td>{p['preco_clube']}</td>
-            <td>{p['preco_antigo']}</td>
-            <td>{p['preco_novo']}</td>
-            <td class="desconto">{p['desconto']}</td>
+    
+        <tr data-categoria="mercearia">
+            <td>Macarrão Italiano Spirali Paganini 500g</td>
+            <td></td>
+            <td></td>
+            <td>R$ 22,90</td>
+            <td>R$ 10,98</td>
+            <td class="desconto">52%</td>
             <td class="preco-usado">-</td>
         </tr>
-        """
-
-    html += """
+        
+        <tr data-categoria="mercearia">
+            <td>Macarrão de Sêmola Grano Duro Espaghetti Paganini 500g</td>
+            <td></td>
+            <td></td>
+            <td>R$ 22,90</td>
+            <td>R$ 10,98</td>
+            <td class="desconto">52%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Macarrão Italiano Rigatoni Paganini 500g</td>
+            <td></td>
+            <td></td>
+            <td>R$ 22,90</td>
+            <td>R$ 10,98</td>
+            <td class="desconto">52%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Massa de Pastel Roberto's 1kg</td>
+            <td></td>
+            <td>R$ 10,98</td>
+            <td>R$ 16,59</td>
+            <td>R$ 11,98</td>
+            <td class="desconto">28%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="limpeza">
+            <td>Limpador Multiuso Gold Original Veja 500ml com 3un</td>
+            <td></td>
+            <td>R$ 11,97</td>
+            <td>R$ 17,48</td>
+            <td>R$ 12,87</td>
+            <td class="desconto">26%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Café em Cápsula Mochaccino Canela Nescafé Dolce Gusto 172g 10 Cápsulas</td>
+            <td></td>
+            <td>R$ 17,98</td>
+            <td>R$ 24,89</td>
+            <td>R$ 19,98</td>
+            <td class="desconto">20%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="outros">
+            <td>Cappuccino em Cápsula Dolce Gusto 117g</td>
+            <td></td>
+            <td>R$ 17,98</td>
+            <td>R$ 24,89</td>
+            <td>R$ 19,98</td>
+            <td class="desconto">20%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Café em Cápsula Espresso Nescafé Dolce Gusto 60g 10 Cápsulas</td>
+            <td></td>
+            <td>R$ 17,98</td>
+            <td>R$ 24,89</td>
+            <td>R$ 19,98</td>
+            <td class="desconto">20%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Café em Cápsula Espresso Intenso Dolce Gusto 8g 10un</td>
+            <td></td>
+            <td>R$ 17,98</td>
+            <td>R$ 24,89</td>
+            <td>R$ 19,98</td>
+            <td class="desconto">20%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Café Au Lait Dolce Gusto 10g 10un</td>
+            <td></td>
+            <td>R$ 17,98</td>
+            <td>R$ 24,89</td>
+            <td>R$ 19,98</td>
+            <td class="desconto">20%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="outros">
+            <td>Creme Dental Máxima Proteção Anticáries Colgate 180g Preço Especial</td>
+            <td></td>
+            <td></td>
+            <td>R$ 8,79</td>
+            <td>R$ 7,29</td>
+            <td class="desconto">17%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="outros">
+            <td>Caixa Sonho de Valsa e Ouro Branco Sortidos 220g</td>
+            <td></td>
+            <td>R$ 12,99</td>
+            <td>R$ 15,89</td>
+            <td>R$ 13,99</td>
+            <td class="desconto">12%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="bebidas">
+            <td>Suco de Laranja Super Suco 1,7L</td>
+            <td></td>
+            <td>R$ 13,98</td>
+            <td>R$ 16,79</td>
+            <td>R$ 14,98</td>
+            <td class="desconto">11%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="limpeza">
+            <td>Inseticida Aerossol Raid Multi-insetos Base Água Leve Mais Pague Menos 420ml</td>
+            <td></td>
+            <td></td>
+            <td>R$ 17,89</td>
+            <td>R$ 15,98</td>
+            <td class="desconto">11%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Macarrão Lamen Suave Vit sabor Tomate Nissin 85g</td>
+            <td></td>
+            <td>R$ 2,20</td>
+            <td>R$ 2,59</td>
+            <td>R$ 2,39</td>
+            <td class="desconto">8%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Macarrão Galinha Caipira Nissin Lámen 85g</td>
+            <td></td>
+            <td>R$ 2,20</td>
+            <td>R$ 2,59</td>
+            <td>R$ 2,39</td>
+            <td class="desconto">8%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Pão de Queijo Congelado Padeirinho Magni 1kg</td>
+            <td></td>
+            <td>R$ 15,99</td>
+            <td>R$ 15,99</td>
+            <td>R$ 14,99</td>
+            <td class="desconto">6%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="outros">
+            <td>Filé de Tilápia Congelado Canção 800g</td>
+            <td></td>
+            <td>R$ 36,99</td>
+            <td>R$ 42,39</td>
+            <td>R$ 39,99</td>
+            <td class="desconto">6%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="mercearia">
+            <td>Molho de Tomate Tradicional Pomarola Sachê 300g</td>
+            <td></td>
+            <td>R$ 2,98</td>
+            <td>R$ 3,59</td>
+            <td>R$ 3,49</td>
+            <td class="desconto">3%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
+        <tr data-categoria="limpeza">
+            <td>Amaciante para Roupas Concentrado Brisa de Verão Downy 1,5L</td>
+            <td></td>
+            <td>R$ 25,98</td>
+            <td>R$ 28,99</td>
+            <td>R$ 27,98</td>
+            <td class="desconto">3%</td>
+            <td class="preco-usado">-</td>
+        </tr>
+        
     </table>
     <script>
     // Normaliza texto para busca
     function normalizeText(s) {
-        return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+        return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
     }
 
     // Campo de busca
@@ -212,9 +390,4 @@ def gerar_tabela(produtos, arquivo="index.html"):
     </script>
     </body>
     </html>
-    """
-
-    with open(arquivo, "w", encoding="utf-8") as f:
-        f.write(html)
-
-    webbrowser.open(arquivo)
+    
