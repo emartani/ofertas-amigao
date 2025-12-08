@@ -10,8 +10,16 @@ def gerar_tabela(produtos, arquivo="produtos_amigao_tabela.html"):
         <meta charset="UTF-8">
         <title>Produtos Extraídos</title>
 
-        <!-- Plausible Analytics -->
-        <script defer data-domain="emartani.github.io" src="https://plausible.io/js/script.js"></script>
+        #<!-- Plausible Analytics -->
+        #<script defer data-domain="emartani.github.io" src="https://plausible.io/js/script.js"></script>
+
+        <!-- Privacy-friendly analytics by Plausible -->
+        <script async src="https://plausible.io/js/pa-nFZNEEQY26AYsl9QD_nCn.js"></script>
+        <script>
+        window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+        plausible.init()
+        plausible('pageview');
+        </script>
 
         <style>
             body { font-family: Arial, sans-serif; background-color: #fafafa; margin: 20px; color: #333; }
