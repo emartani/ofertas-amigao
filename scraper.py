@@ -10,7 +10,7 @@ def extrair_produtos(chromedriver_path="C:/chromedriver/chromedriver.exe"):
     options = Options()
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
-    #options.add_argument("--headless")  # opcional: rodar sem abrir janela
+    options.add_argument("--headless")  # opcional: rodar sem abrir janela
 
     driver = webdriver.Chrome(service=Service(chromedriver_path), options=options)
     url = "https://www.amigao.com/s/?clubProducts"
