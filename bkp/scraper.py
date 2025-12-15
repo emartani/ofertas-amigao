@@ -44,6 +44,7 @@ def extrair_produtos(chromedriver_path="C:/chromedriver/chromedriver.exe"):
     produtos = []
     for item in soup.select(".product-card"):
         nome = item.select_one(".product-card-name")
+        peso = item.select_one(".product-card-badge-kg")
         desconto = item.select_one(".product-card-discount-badge-value")
         preco_clube = item.select_one(".product-card-club-price")
         preco_antigo = item.select_one(".product-card-old-price span")
@@ -63,6 +64,7 @@ def extrair_produtos(chromedriver_path="C:/chromedriver/chromedriver.exe"):
 
         produtos.append({
             "nome": nome_texto,
+            "peso": peso.get_text(strip=True) if peso else "",
             "desconto": desconto.get_text(strip=True) if desconto else "",
             "desconto_valor": desconto_valor,
             "preco_clube": preco_clube.get_text(strip=True).replace(" no + Amigo", "") if preco_clube else "",
