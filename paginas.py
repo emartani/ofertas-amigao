@@ -125,7 +125,7 @@ def gerar_tabela(produtos, arquivo="index.html"):
         </script>
 
     <body>
-    <h1 id="titulo">Produtos Extraídos - Ordenados por Maior Desconto</h1>
+    <h1 id="titulo">Ofertas Amigão Lins - Ordenados por Maior Desconto</h1>
     <p id="atualizacao">Atualizado em: {data_atual}</p>
     <div class="botoes">
         <button onclick="ordenarDesconto()">Ordenados por Maior Desconto</button>
@@ -139,7 +139,7 @@ def gerar_tabela(produtos, arquivo="index.html"):
             <th>Preço Antigo</th>
             <th>Preço Novo</th>
             <th>Desconto</th>
-            <th>Preço usado</th>
+            <th>Menor Valor</th>
         </tr>
     """
 
