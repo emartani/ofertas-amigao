@@ -6,13 +6,14 @@ import time
 from bs4 import BeautifulSoup
 from classificacao import detectar_categoria  # função inteligente
 
-def extrair_produtos(chromedriver_path="C:/chromedriver/chromedriver.exe"):
+def extrair_produtos():
     options = Options()
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
-    options.add_argument("--headless")  # opcional: rodar sem abrir janela
+    options.add_argument("--headless=new")  # modo headless moderno
 
-    driver = webdriver.Chrome(service=Service(chromedriver_path), options=options)
+    driver = webdriver.Chrome(options=options)  # Selenium Manager resolve tudo
+
     url = "https://www.amigao.com/s/?clubProducts"
     driver.get(url)
     time.sleep(3)
