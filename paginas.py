@@ -7,9 +7,8 @@ def gerar_tabela(produtos, arquivo="index.html"):
     # Ordenação inicial: maior desconto
     produtos_ordenados = sorted(produtos, key=lambda x: -x["desconto_valor"])
 
-    html = f"""
-    <html>
-    <head>
+    html = f""" 
+<html>
         <meta charset="UTF-8">
         <title>Ofertas Amigão Lins</title>
 
@@ -235,8 +234,8 @@ def gerar_tabela(produtos, arquivo="index.html"):
         }
         </script>
     </body>
-    </html>
-    """
+</html>
+"""
 
     with open(arquivo, "w", encoding="utf-8") as f:
         f.write(html)
