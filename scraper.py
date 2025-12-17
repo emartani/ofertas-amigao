@@ -27,13 +27,13 @@ def extrair_produtos():
         pass
 
     # Clicar em "Mostrar Mais" até não existir mais
-    #while True:
-    #    try:
-    #        botao = driver.find_element(By.CSS_SELECTOR, "a[data-testid='show-more']")
-    #        botao.click()
-    #        time.sleep(3)
-    #    except:
-    #        break
+    while True:
+        try:
+            botao = driver.find_element(By.CSS_SELECTOR, "a[data-testid='show-more']")
+            botao.click()
+            time.sleep(3)
+        except:
+            break
 
     # Extrair HTML final
     html = driver.page_source
