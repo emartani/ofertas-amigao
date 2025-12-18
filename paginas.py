@@ -406,8 +406,8 @@ def gerar_tabela(produtos, arquivo="index.html"):
         }
     }
 
-    // opcional: ordenar por maior desconto ao carregar
-    document.addEventListener("DOMContentLoaded", ordenarDesconto);
+    // DESATIVADO DURANTE TESTES opcional: ordenar por maior desconto ao carregar
+    // document.addEventListener("DOMContentLoaded", ordenarDesconto);
     </script>
 
     <script> 
