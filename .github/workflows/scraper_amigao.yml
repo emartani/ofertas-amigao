@@ -27,4 +27,4 @@ jobs:
         env:
           COOKIE_AMIGAO: ${{ secrets.COOKIE_AMIGAO }}
         run: |
-          python scraper_amigao.py
+          python main.py
