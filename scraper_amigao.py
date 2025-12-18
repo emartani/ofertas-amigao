@@ -162,7 +162,6 @@ def get_all_products(page_size: int = 50) -> List[Dict[str, Any]]:
 
     return all_products
 
-
 if __name__ == "__main__":
     produtos = get_all_products(page_size=50)
     print(f"\nTotal final de produtos: {len(produtos)}\n")
