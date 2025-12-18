@@ -1,0 +1,4658 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas Amigão Lins</title>
+
+    <!-- Plausible Analytics -->
+    <script defer data-domain="emartani.github.io" src="https://plausible.io/js/script.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0X4P4ZM0RC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-0X4P4ZM0RC');
+    </script>
+
+    
+<style>
+
+    /* ======== Variáveis ======== */
+    :root {
+        --bg-page: #fff7eb;
+        --bg-header: #ffebc2;
+        --accent: #e53935;
+        --accent-dark: #b71c1c;
+        --accent-secondary: #ff9800;
+        --text-main: #333;
+        --text-muted: #666;
+        --table-header-bg: #e53935;
+        --table-header-text: #fff;
+        --card-shadow: 0 3px 8px rgba(0,0,0,0.18);
+        --border-radius: 10px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        background-color: var(--bg-page);
+        margin: 0;
+        padding: 16px;
+        color: var(--text-main);
+    }
+
+    header {
+        max-width: 1100px;
+        margin: 0 auto 16px auto;
+        background: linear-gradient(135deg, #ffe0b2, #fff3e0);
+        border-radius: var(--border-radius);
+        padding: 16px 16px 12px 16px;
+        box-shadow: var(--card-shadow);
+    }
+
+    header h1 {
+        margin: 0;
+        text-align: center;
+        color: var(--accent-dark);
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        margin: 8px 0 0 0;
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+    }
+
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .top-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    button {
+        padding: 10px 16px;
+        font-size: 0.95rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #fff;
+        transition: 0.2s;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+    }
+
+    button:hover {
+        background: var(--accent-dark);
+        transform: translateY(-1px);
+    }
+
+    #busca {
+        flex: 1;
+        min-width: 180px;
+        padding: 10px 12px;
+        font-size: 0.95rem;
+        border: 1px solid #d0b090;
+        border-radius: 999px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        outline: none;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        background: #fff;
+        border-radius: var(--border-radius);
+        box-shadow: var(--card-shadow);
+        padding: 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 720px;
+    }
+
+    thead th {
+        background: var(--table-header-bg);
+        color: var(--table-header-text);
+        padding: 10px 10px;
+        text-align: left;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    tbody td {
+        padding: 9px 10px;
+        border-bottom: 1px solid #f0e0d0;
+        font-size: 0.93rem;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #fffaf4;
+    }
+
+    tbody tr:hover {
+        background-color: #ffe8d2;
+    }
+
+    .col-nome {
+        font-weight: 600;
+    }
+
+    .desconto {
+        font-weight: 700;
+        color: var(--accent);
+    }
+
+    .preco-usado {
+        font-style: italic;
+        color: var(--text-muted);
+    }
+
+    /* ======== MOBILE ======== */
+    @media (max-width: 600px) {
+        body { padding: 10px; }
+        header { padding: 12px 10px 8px 10px; }
+        header h1 { font-size: 1.3rem; }
+        header p { font-size: 0.8rem; }
+        .top-bar { flex-direction: column; align-items: stretch; }
+        #busca { width: 100%; }
+        .botoes { width: 100%; flex-direction: column; }
+        button { width: 100%; justify-content: center; }
+        table { min-width: 600px; }
+    }
+
+    /* ======== PAISAGEM (LANDSCAPE) ======== */
+    @media (orientation: landscape) {
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        * {
+            max-width: 100%;
+        }
+
+        .table-container {
+            overflow-x: hidden;
+        }
+
+        table {
+            width: 100%;
+            min-width: unset;
+            table-layout: fixed;
+        }
+
+        th, td {
+            white-space: normal;
+            word-wrap: break-word;
+            font-size: 0.85rem;
+        }
+
+        .col-nome {
+            max-width: 200px;
+        }
+    }
+
+</style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Ofertas Amigão Lins</h1>
+        <p>Atualizado em: 18/12/2025 14:39</p>
+    </header>
+
+    <main>
+        <div class="top-bar">
+            <div class="botoes">
+                <button onclick="ordenarDesconto()">
+                    <span class="icon">🔥</span>
+                    <span>Maior desconto</span>
+                </button>
+                <button onclick="ordenarPreco()">
+                    <span class="icon">💰</span>
+                    <span>Menor valor</span>
+                </button>
+            </div>
+            <input type="text" id="busca" placeholder="Buscar produto...">
+        </div>
+
+        <div class="info-bar" id="info-ordem">
+            Listando por: <strong>Maior desconto</strong>
+        </div>
+
+        <div class="table-container">
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço Clube + Amigo</th>
+                        <th>Preço antigo</th>
+                        <th>Preço novo</th>
+                        <th>Desconto</th>
+                        <th>Menor valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td class="col-nome">Milho de Pipoca Yoki 400g</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 4,99</td>
+                        <td>R$ 4,49</td>
+                        <td class="desconto">10%</td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Água Sanitária Qboa Galão 2L</td>
+                        <td>R$ 6,39</td>
+                        <td>R$ 7,49</td>
+                        <td>R$ 6,98</td>
+                        <td class="desconto">7%</td>
+                        <td class="preco-usado">R$ 6,39</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho sabor Presunto Fandangos Elma Chips 160g</td>
+                        <td>R$ 8,99</td>
+                        <td>R$ 13,90</td>
+                        <td>R$ 10,42</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho sabor Requeijão Cheetos Onda Elma Chips 150g</td>
+                        <td>R$ 8,99</td>
+                        <td>R$ 12,49</td>
+                        <td>R$ 9,37</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho sabor Queijo Nacho Doritos Elma Chips 120g</td>
+                        <td>R$ 7,49</td>
+                        <td>R$ 11,99</td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 7,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho Cheetos Lua Elma Chips 143g</td>
+                        <td>R$ 8,99</td>
+                        <td>R$ 12,49</td>
+                        <td>R$ 9,37</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Chips Lisa sabor Sour Cream Lay's 115g</td>
+                        <td>R$ 8,24</td>
+                        <td>R$ 13,99</td>
+                        <td>R$ 10,49</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 8,24</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho sabor Mix Queijos Cheetos Elma Chips 131g</td>
+                        <td></td>
+                        <td>R$ 12,49</td>
+                        <td>R$ 9,37</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 9,37</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Caixa Sonho de Valsa e Ouro Branco Sortidos 220g</td>
+                        <td>R$ 12,99</td>
+                        <td>R$ 15,89</td>
+                        <td>R$ 13,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 12,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante sem Açúcar Sprite 2L</td>
+                        <td>R$ 7,49</td>
+                        <td>R$ 9,19</td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto">2%</td>
+                        <td class="preco-usado">R$ 7,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Panettone com Frutas Nida 400g</td>
+                        <td>R$ 16,98</td>
+                        <td>R$ 16,98</td>
+                        <td>R$ 13,98</td>
+                        <td class="desconto">18%</td>
+                        <td class="preco-usado">R$ 13,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Amendoim Japonês Elma Chips 145g</td>
+                        <td>R$ 5,24</td>
+                        <td>R$ 8,49</td>
+                        <td>R$ 6,37</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 5,24</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Panettone com Gotas de Chocolate Nida 400g</td>
+                        <td>R$ 16,98</td>
+                        <td>R$ 16,98</td>
+                        <td>R$ 13,98</td>
+                        <td class="desconto">18%</td>
+                        <td class="preco-usado">R$ 13,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Frita Ondulada Original Ruffles 115g</td>
+                        <td>R$ 8,24</td>
+                        <td>R$ 15,39</td>
+                        <td>R$ 11,54</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 8,24</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho sabor Queijo Suíço Cheetos Bola Elma Chips 125g</td>
+                        <td>R$ 8,99</td>
+                        <td>R$ 12,49</td>
+                        <td>R$ 9,37</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Ovinhos de Amendoim Elma Chips 145g</td>
+                        <td>R$ 5,24</td>
+                        <td>R$ 8,89</td>
+                        <td>R$ 6,67</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 5,24</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sorvete Napolitano Tradicioal Nestlé 1,5l</td>
+                        <td>R$ 18,99</td>
+                        <td>R$ 24,99</td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 18,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Frita Ondulada Churrasco Ruffles 115g</td>
+                        <td></td>
+                        <td>R$ 15,39</td>
+                        <td>R$ 11,54</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 11,54</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Chips sabor Original  Ruffles lata 100g</td>
+                        <td>R$ 8,99</td>
+                        <td>R$ 11,39</td>
+                        <td>R$ 9,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Frita Cebola e Salsa Ruffles Lata 100g</td>
+                        <td>R$ 8,99</td>
+                        <td>R$ 11,39</td>
+                        <td>R$ 9,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Palmito Ipanema Pupunha Tolete 300g</td>
+                        <td>R$ 18,90</td>
+                        <td>R$ 19,99</td>
+                        <td>R$ 17,90</td>
+                        <td class="desconto">10%</td>
+                        <td class="preco-usado">R$ 17,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Filé de Peito de Frango Congelado Lar kg</td>
+                        <td>R$ 14,98</td>
+                        <td></td>
+                        <td>R$ 18,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 14,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sabão em Pó Tixan Ypê Primavera 2,2Kg</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 24,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 24,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Energética Sugar Free Nectarina Red Bull 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Zero Áçucar Coca-Cola Pet 2L</td>
+                        <td>R$ 10,49</td>
+                        <td></td>
+                        <td>R$ 11,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 10,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Coca-Cola Zero Pet 1,5L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Energética Nectarina Red Bull 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Kit Refrigerante Coca-Cola Original + Fanta Guaraná 2L Cada Leve Mais Pague Menos</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 17,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 17,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Frango a Passarinho Congelado Lar 700g</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Kuat Pet 2L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Milho em Conserva Nida 170g</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,32</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Filezinho de Frango Sassami Lar 700g</td>
+                        <td>R$ 14,98</td>
+                        <td></td>
+                        <td>R$ 18,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 14,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Lava Roupas Líquido Omo Lavagem Perfeita 3L</td>
+                        <td>R$ 39,98</td>
+                        <td></td>
+                        <td>R$ 41,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 39,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Heineken Puro Malte 330ml Long Neck</td>
+                        <td>R$ 5,79</td>
+                        <td></td>
+                        <td>R$ 6,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Amaciante para Roupas Concentrado Brisa de Verão Downy 1,5L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 29,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 29,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Amaciante Concentrado Comfort Cuidado Intensivo 1,5L</td>
+                        <td>R$ 22,98</td>
+                        <td>R$ 31,79</td>
+                        <td>R$ 23,98</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 22,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Coca-Cola Pet 1,5L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Pringles Original 104g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 10,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 10,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Massa para Tapioca Nida 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa Mandioca  Caseirissima com Pedaço de Banana Yoki 200g</td>
+                        <td>R$ 5,99</td>
+                        <td>R$ 7,99</td>
+                        <td>R$ 6,49</td>
+                        <td class="desconto">19%</td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pó para Refresco sabor Laranja Frisco 18g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 0,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 0,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Creme de Avelã Nutella 350g</td>
+                        <td>R$ 27,99</td>
+                        <td></td>
+                        <td>R$ 29,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 27,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Heineken 350ml Lata</td>
+                        <td>R$ 4,79</td>
+                        <td></td>
+                        <td>R$ 5,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante sem Açúcar Coca-Cola Garrafa 200ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 1,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Coca-Cola Pet 3L</td>
+                        <td>R$ 11,99</td>
+                        <td></td>
+                        <td>R$ 14,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 11,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Original Coca-Cola Lata 350ml</td>
+                        <td>R$ 3,49</td>
+                        <td></td>
+                        <td>R$ 3,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Tubanida 2L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Arroz Coroa 5kg</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 14,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 14,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Energética Monster Energy Lata 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Parafuso com Ovos Todeschini 500g</td>
+                        <td>R$ 2,79</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 3,49</td>
+                        <td class="desconto">13%</td>
+                        <td class="preco-usado">R$ 2,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito sabor Coco Marilan 300g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Maionese Tradicional Nida 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho de Milho Queijo Nacho Doritos 210g</td>
+                        <td>R$ 12,99</td>
+                        <td></td>
+                        <td>R$ 19,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 12,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Leite em Pó Ninho 380g Integral 10% Grátis</td>
+                        <td>R$ 18,99</td>
+                        <td>R$ 19,79</td>
+                        <td>R$ 17,09</td>
+                        <td class="desconto">14%</td>
+                        <td class="preco-usado">R$ 17,09</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Leite em Pó Integral Ninho Lata 380g</td>
+                        <td>R$ 21,10</td>
+                        <td>R$ 21,99</td>
+                        <td>R$ 18,99</td>
+                        <td class="desconto">14%</td>
+                        <td class="preco-usado">R$ 18,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Extrato Tomate Elefante Caixa 280g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Margarina Cremosa sem Sal Qualy Pote 500g</td>
+                        <td>R$ 7,69</td>
+                        <td>R$ 8,39</td>
+                        <td>R$ 7,99</td>
+                        <td class="desconto">5%</td>
+                        <td class="preco-usado">R$ 7,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Original Coca-Cola Garrafa 200ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 1,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Manteiga Tablete Extra com Sal Batavo 200g</td>
+                        <td></td>
+                        <td>R$ 12,49</td>
+                        <td>R$ 9,98</td>
+                        <td class="desconto">20%</td>
+                        <td class="preco-usado">R$ 9,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pão de Mel Bauducco Caixa 180g</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 9,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Azeitona Verde Fatiadas Vale Fertil Sachê 150g</td>
+                        <td>R$ 7,19</td>
+                        <td>R$ 7,19</td>
+                        <td>R$ 6,49</td>
+                        <td class="desconto">10%</td>
+                        <td class="preco-usado">R$ 6,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Coxinha da Asa Congelada Sadia Pacote 1kg</td>
+                        <td>R$ 15,99</td>
+                        <td></td>
+                        <td>R$ 18,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 15,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Sugarfree Red Bull Lata 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Azeitona Verde com Caroço Vale Fértil 500g</td>
+                        <td>R$ 18,90</td>
+                        <td></td>
+                        <td>R$ 19,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 18,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Margarina com Sal Vegetal Cremosa Qualy 500g</td>
+                        <td>R$ 7,69</td>
+                        <td>R$ 8,39</td>
+                        <td>R$ 7,99</td>
+                        <td class="desconto">5%</td>
+                        <td class="preco-usado">R$ 7,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Lava Roupas Líquido Limpeza Total Brilhante 3L</td>
+                        <td>R$ 27,98</td>
+                        <td></td>
+                        <td>R$ 29,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 27,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Azeitona Verde sem Caroço Vale Fértil 120g</td>
+                        <td>R$ 7,19</td>
+                        <td>R$ 7,19</td>
+                        <td>R$ 6,49</td>
+                        <td class="desconto">10%</td>
+                        <td class="preco-usado">R$ 6,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Energética Red Bull Lata 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Leite UHT Semidesnatado Lider 1L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Eisenbahn Pilsen 350ml Lata</td>
+                        <td>R$ 3,49</td>
+                        <td></td>
+                        <td>R$ 4,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho sabor Cebola Torcida 35g</td>
+                        <td>R$ 1,59</td>
+                        <td></td>
+                        <td>R$ 2,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico sabor Morango com Maracujá Gatorade 500ml</td>
+                        <td>R$ 4,33</td>
+                        <td></td>
+                        <td>R$ 5,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,33</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico Frutas Tropicais Powerade 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Fanta Laranja Lata 350ml</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Desengordurante Ultra Rápido Cif refil 450ml</td>
+                        <td>R$ 8,98</td>
+                        <td>R$ 12,99</td>
+                        <td>R$ 9,98</td>
+                        <td class="desconto">23%</td>
+                        <td class="preco-usado">R$ 8,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Manteiga Extra sem Sal BATAVO Tablete 200g</td>
+                        <td></td>
+                        <td>R$ 12,49</td>
+                        <td>R$ 9,98</td>
+                        <td class="desconto">20%</td>
+                        <td class="preco-usado">R$ 9,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico sabor Mix de Frutas Montains Blast Powerade Garrafa 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Massa de Pastel Roberto's 1kg</td>
+                        <td>R$ 10,98</td>
+                        <td>R$ 16,59</td>
+                        <td>R$ 11,98</td>
+                        <td class="desconto">28%</td>
+                        <td class="preco-usado">R$ 10,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico Tangerina Powerade Garrafa 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Maionese Receita Caseira Hemmer 500g</td>
+                        <td>R$ 7,99</td>
+                        <td>R$ 9,99</td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto">10%</td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho sabor Pimenta Mexicana Torcida 35g</td>
+                        <td>R$ 1,59</td>
+                        <td></td>
+                        <td>R$ 2,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Amaciante Concentrado Hydra Serum Comfort 1,5L</td>
+                        <td>R$ 22,98</td>
+                        <td>R$ 31,79</td>
+                        <td>R$ 23,98</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 22,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico sabor Uva Powerade 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa com Pedaços de Cebola Yoki 200g</td>
+                        <td>R$ 5,99</td>
+                        <td>R$ 7,99</td>
+                        <td>R$ 6,49</td>
+                        <td class="desconto">19%</td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa de Mandioca com Pedaços Crocante Costelinha Defumada Yoki Caseiríssima Pacote 200g</td>
+                        <td>R$ 5,99</td>
+                        <td>R$ 7,99</td>
+                        <td>R$ 6,49</td>
+                        <td class="desconto">19%</td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Red Bull Amora Sem Açúcar Lata 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Petra Puro Malte Lager 350ml Lata</td>
+                        <td>R$ 2,79</td>
+                        <td></td>
+                        <td>R$ 3,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotonico Limão Powerade Pet 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético The Tropical Edition Red Bull Lata 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Energy Drink Melancia Red Bull Lata 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho sabor Pão de Alho Torcida 35g</td>
+                        <td>R$ 1,59</td>
+                        <td></td>
+                        <td>R$ 2,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Palha Tradicional Nida 100g</td>
+                        <td>R$ 6,99</td>
+                        <td></td>
+                        <td>R$ 7,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Red Bull Morango e Pêssego 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Guaraná Fanta Lata 350ml</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Spaten Puro Malte 350ml Lata</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Kit Shampoo 300ml e Condicionador 150ml Colágeno Pantene</td>
+                        <td>R$ 26,90</td>
+                        <td>R$ 35,90</td>
+                        <td>R$ 27,90</td>
+                        <td class="desconto">22%</td>
+                        <td class="preco-usado">R$ 26,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Cereja e Frutas Silvestres Red Bull 250ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida de Chocolate Power Whey 3 Corações 250ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Feijão Carioca T1 Martinelli 1kg</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito de Água e Sal Isabela 350g</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bombom Ferrero Rocher Caixa 100g 8 Unidades</td>
+                        <td>R$ 29,98</td>
+                        <td></td>
+                        <td>R$ 31,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 29,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Eisenbahn Pilsen Lata 350ml com 12un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 50,28</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 50,28</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sal de Parrilla com Chimichurri BR Spices-1,010kg</td>
+                        <td>R$ 16,99</td>
+                        <td>R$ 28,79</td>
+                        <td>R$ 19,90</td>
+                        <td class="desconto">31%</td>
+                        <td class="preco-usado">R$ 16,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Leite Pó Instantâneo Integral Ninho Lata 380g</td>
+                        <td>R$ 21,10</td>
+                        <td>R$ 21,99</td>
+                        <td>R$ 18,99</td>
+                        <td class="desconto">14%</td>
+                        <td class="preco-usado">R$ 18,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Shampoo+Condicionador Restauração Pantene 350ml + 175ml</td>
+                        <td>R$ 26,90</td>
+                        <td>R$ 35,90</td>
+                        <td>R$ 27,90</td>
+                        <td class="desconto">22%</td>
+                        <td class="preco-usado">R$ 26,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Limpador Derrete Gordura Cif Sachê 450ml</td>
+                        <td>R$ 9,98</td>
+                        <td>R$ 16,39</td>
+                        <td>R$ 10,98</td>
+                        <td class="desconto">33%</td>
+                        <td class="preco-usado">R$ 9,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa de Mandioca Temperada Bacon Kinino 400g</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 5,69</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético sem Açúcar Pomelo Edition Red Bull 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Red Bull Energético Maracujá e Melão 250ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Vodka Intencion Garrafa 900ml</td>
+                        <td>R$ 14,90</td>
+                        <td>R$ 26,59</td>
+                        <td>R$ 19,90</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 14,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Tempero Meu Segredo 7 Vegetais Maggi 49g</td>
+                        <td>R$ 2,99</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 3,49</td>
+                        <td class="desconto">13%</td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Marshmallow Torção sabor Baunilha Fini 200g</td>
+                        <td>R$ 9,99</td>
+                        <td>R$ 15,99</td>
+                        <td>R$ 11,99</td>
+                        <td class="desconto">25%</td>
+                        <td class="preco-usado">R$ 9,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pipoca Micro-Ondas Cobertura Caramelo Yoki Pacote 160g</td>
+                        <td>R$ 7,99</td>
+                        <td>R$ 11,25</td>
+                        <td>R$ 8,79</td>
+                        <td class="desconto">22%</td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Milho Pipoca para Microondas com Chocolate Yoki 160g</td>
+                        <td>R$ 7,99</td>
+                        <td>R$ 11,25</td>
+                        <td>R$ 8,79</td>
+                        <td class="desconto">22%</td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Isotônico Laranja Powerade 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pepino em Conserva Oliveira 300g</td>
+                        <td>R$ 9,90</td>
+                        <td>R$ 11,90</td>
+                        <td>R$ 10,90</td>
+                        <td class="desconto">8%</td>
+                        <td class="preco-usado">R$ 9,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Folhado de Presunto e Queijo Forno de Minas 80g</td>
+                        <td>R$ 5,99</td>
+                        <td>R$ 5,99</td>
+                        <td>R$ 3,98</td>
+                        <td class="desconto">34%</td>
+                        <td class="preco-usado">R$ 3,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pipoca de Microondas com Manteiga Yoki 105g</td>
+                        <td>R$ 7,99</td>
+                        <td>R$ 11,25</td>
+                        <td>R$ 8,79</td>
+                        <td class="desconto">22%</td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa de Mandioca Temperada Tradicional Kinino 400g</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 5,69</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Coquetel Creme Doce de Leite Dulce Leche 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 58,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 58,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sorvete Napolitano Flocos Nestlé 1,5l</td>
+                        <td>R$ 18,99</td>
+                        <td>R$ 24,99</td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 18,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Escova de Cabelo Infantil Hot Wheels Oval Condor</td>
+                        <td>R$ 24,90</td>
+                        <td>R$ 49,99</td>
+                        <td>R$ 29,90</td>
+                        <td class="desconto">40%</td>
+                        <td class="preco-usado">R$ 24,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Massa de Semola com Ovos para Lasanha Renata Embalagem 500g</td>
+                        <td>R$ 6,99</td>
+                        <td>R$ 9,29</td>
+                        <td>R$ 7,99</td>
+                        <td class="desconto">14%</td>
+                        <td class="preco-usado">R$ 6,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Leite em Pó Instantâneo Integral Ninho 380g 10% de Brinde</td>
+                        <td>R$ 18,99</td>
+                        <td>R$ 19,79</td>
+                        <td>R$ 17,09</td>
+                        <td class="desconto">14%</td>
+                        <td class="preco-usado">R$ 17,09</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farinha de Milho Amarela Yoki 500g</td>
+                        <td>R$ 4,99</td>
+                        <td>R$ 6,99</td>
+                        <td>R$ 5,79</td>
+                        <td class="desconto">17%</td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Papel Higiênico Folha Dupla Neutro Familiar 30m Leve 12 Pague 11</td>
+                        <td>R$ 15,90</td>
+                        <td></td>
+                        <td>R$ 17,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 15,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sal de Parrilla Clássico Br Spices 1,1kg</td>
+                        <td>R$ 16,99</td>
+                        <td>R$ 24,39</td>
+                        <td>R$ 19,90</td>
+                        <td class="desconto">18%</td>
+                        <td class="preco-usado">R$ 16,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito Maizena Isabela 350g</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Molho de Pimenta Caiena com Alho Tabasco Caixa 60ml</td>
+                        <td>R$ 19,90</td>
+                        <td>R$ 28,90</td>
+                        <td>R$ 23,90</td>
+                        <td class="desconto">17%</td>
+                        <td class="preco-usado">R$ 19,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Molho de Pimenta Original Tabasco 60ml</td>
+                        <td>R$ 19,90</td>
+                        <td>R$ 28,90</td>
+                        <td>R$ 23,90</td>
+                        <td class="desconto">17%</td>
+                        <td class="preco-usado">R$ 19,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Molho de Pimenta Green Jalapeno Tabasco 60ml</td>
+                        <td>R$ 19,90</td>
+                        <td>R$ 28,90</td>
+                        <td>R$ 23,90</td>
+                        <td class="desconto">17%</td>
+                        <td class="preco-usado">R$ 19,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Peixe Sardinha Inteira Oceani Congelada 800g</td>
+                        <td>R$ 8,99</td>
+                        <td></td>
+                        <td>R$ 9,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Penne com Ovos Todeschini 500g</td>
+                        <td>R$ 2,79</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 3,49</td>
+                        <td class="desconto">13%</td>
+                        <td class="preco-usado">R$ 2,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito de Leite Isabela 350g</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sorvete Creme Nestlé 1,5l</td>
+                        <td>R$ 18,99</td>
+                        <td>R$ 24,99</td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 18,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sorvete Flocos Nestlé 1,5l</td>
+                        <td>R$ 18,99</td>
+                        <td>R$ 24,99</td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 18,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito Cream Cracker Isabela 350g</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa de Mandioca Bacon Menos Sódio Kinino 400g</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 5,69</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sorvete de Chocolate Tradicional Nestlé 1,5l</td>
+                        <td>R$ 18,99</td>
+                        <td>R$ 24,99</td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 18,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa de Mandioca Tradicional Menos Sódio Kinino 400g</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 5,69</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Carrinho 90 Acura Nsx Factory Fresh Hot Wheels Cartela un</td>
+                        <td>R$ 16,90</td>
+                        <td>R$ 22,90</td>
+                        <td>R$ 19,90</td>
+                        <td class="desconto">13%</td>
+                        <td class="preco-usado">R$ 16,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Láctea Chocolate Quatá Kids 180ml</td>
+                        <td>R$ 0,99</td>
+                        <td></td>
+                        <td>R$ 1,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 0,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Lager Puro Malte Estrella Galicia Lata 350ml</td>
+                        <td>R$ 2,99</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa de Milho Tradicional Kinino 400g</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 5,69</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Espumante Moscatel Rose Oremus 750ml</td>
+                        <td>R$ 26,90</td>
+                        <td>R$ 32,90</td>
+                        <td>R$ 29,90</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 26,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Massa de Pastel Roberto's 500g</td>
+                        <td>R$ 7,49</td>
+                        <td>R$ 8,89</td>
+                        <td>R$ 7,99</td>
+                        <td class="desconto">10%</td>
+                        <td class="preco-usado">R$ 7,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Espumante Moscatel Rosé Aurora 750ml</td>
+                        <td>R$ 28,90</td>
+                        <td>R$ 38,89</td>
+                        <td>R$ 34,90</td>
+                        <td class="desconto">10%</td>
+                        <td class="preco-usado">R$ 28,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa de Mandioca Temperada Picante Kinino 400g</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 5,69</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Azeitona Verde com Caroço em Conserva Vale Fértil 150g</td>
+                        <td>R$ 7,19</td>
+                        <td>R$ 7,19</td>
+                        <td>R$ 6,49</td>
+                        <td class="desconto">10%</td>
+                        <td class="preco-usado">R$ 6,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa de Mandioca Picante Menos Sódio Kinino 400g</td>
+                        <td>R$ 3,99</td>
+                        <td>R$ 5,69</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">12%</td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Premium Sol 330ml Long Neck</td>
+                        <td></td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Doce de Leite Claríssimo 400g</td>
+                        <td>R$ 9,90</td>
+                        <td></td>
+                        <td>R$ 10,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 9,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito Doce Isabela 350g</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Nata Lider 300g</td>
+                        <td>R$ 11,98</td>
+                        <td>R$ 13,89</td>
+                        <td>R$ 12,98</td>
+                        <td class="desconto">7%</td>
+                        <td class="preco-usado">R$ 11,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Espumante Moscatel Oremus 750ml</td>
+                        <td>R$ 26,90</td>
+                        <td>R$ 32,90</td>
+                        <td>R$ 29,90</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 26,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Leite UHT Integral com Tampa Rosca Líder 1L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa Pronta de Milho Yoki 400g</td>
+                        <td>R$ 8,99</td>
+                        <td>R$ 10,90</td>
+                        <td>R$ 9,99</td>
+                        <td class="desconto">8%</td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Grão de Bico Yoki 400g</td>
+                        <td>R$ 9,90</td>
+                        <td>R$ 11,59</td>
+                        <td>R$ 10,90</td>
+                        <td class="desconto">6%</td>
+                        <td class="preco-usado">R$ 9,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Espumantes Moscatel Aurora 750ml</td>
+                        <td>R$ 28,90</td>
+                        <td>R$ 38,89</td>
+                        <td>R$ 35,90</td>
+                        <td class="desconto">8%</td>
+                        <td class="preco-usado">R$ 28,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Laranja Fanta Garrafa 2L</td>
+                        <td>R$ 7,49</td>
+                        <td>R$ 9,19</td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto">2%</td>
+                        <td class="preco-usado">R$ 7,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Creme Vegetal com Sal Becel 500g</td>
+                        <td>R$ 6,99</td>
+                        <td>R$ 13,69</td>
+                        <td>R$ 12,49</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 6,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Massa de Pizza Roberto's 160g</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 6,49</td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto">8%</td>
+                        <td class="preco-usado">R$ 5,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Margarina Cremosa sem Sal Original Becel 500g</td>
+                        <td>R$ 6,99</td>
+                        <td>R$ 13,69</td>
+                        <td>R$ 12,49</td>
+                        <td class="desconto">9%</td>
+                        <td class="preco-usado">R$ 6,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Fuba Milho Mimoso Pre-Cozido Yoki Embalagem 500g</td>
+                        <td>R$ 5,49</td>
+                        <td>R$ 6,29</td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto">5%</td>
+                        <td class="preco-usado">R$ 5,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Creme de Leite Uht Leve Homogeneizado Lider 200g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Detergente Líquido Neutro Ypê 500ml com 6un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 13,74</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,74</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito de Maizena Marilan 300g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Creme de Leite Glória Tp 200g</td>
+                        <td>R$ 2,59</td>
+                        <td></td>
+                        <td>R$ 2,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Água Mineral com Gás Cristal 500ml</td>
+                        <td>R$ 1,29</td>
+                        <td></td>
+                        <td>R$ 1,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,29</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Uva Fanta Garrafa 2L</td>
+                        <td>R$ 7,49</td>
+                        <td>R$ 9,19</td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto">2%</td>
+                        <td class="preco-usado">R$ 7,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão de Sêmola Espaguete 8 Galo Pacote 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Detergente Líquido Clear Ypê 500ml com 6 un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 13,74</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,74</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Extrato de Tomate Predilecta 300g</td>
+                        <td></td>
+                        <td>R$ 6,29</td>
+                        <td>R$ 5,98</td>
+                        <td class="desconto">5%</td>
+                        <td class="preco-usado">R$ 5,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salame Perdigão Defumado 100g</td>
+                        <td>R$ 10,99</td>
+                        <td>R$ 13,39</td>
+                        <td>R$ 12,99</td>
+                        <td class="desconto">3%</td>
+                        <td class="preco-usado">R$ 10,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Extrato de Tomate Elefante 300g</td>
+                        <td>R$ 6,49</td>
+                        <td></td>
+                        <td>R$ 6,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Leite UHT Semidesnatado com Tampa Rosca Líder 1L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Maionese Tradicional Hellmanns 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 10,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 10,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Parafuso de Sêmola Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Azeite  Extra Virgem La Espanhola 500ml</td>
+                        <td>R$ 27,90</td>
+                        <td>R$ 33,98</td>
+                        <td>R$ 32,90</td>
+                        <td class="desconto">3%</td>
+                        <td class="preco-usado">R$ 27,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Molho de Tomate Tradicional Heinz 240g</td>
+                        <td>R$ 2,79</td>
+                        <td></td>
+                        <td>R$ 3,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito Cream Cracker Tradicional Marilan 350g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito sabor Leite Marilan 300g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Espumante Rosé Zero Álcool Aurora 750ml</td>
+                        <td>R$ 32,90</td>
+                        <td>R$ 37,99</td>
+                        <td>R$ 37,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 32,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Espumante 0 Por Cento Álcool Aurora 750ml</td>
+                        <td>R$ 32,90</td>
+                        <td>R$ 37,99</td>
+                        <td>R$ 37,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 32,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Coca-Cola Zero Açúcar 350ml</td>
+                        <td>R$ 3,49</td>
+                        <td></td>
+                        <td>R$ 3,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Espumante Nacional Moscato Bianco Garibaldi 750ml</td>
+                        <td>R$ 32,90</td>
+                        <td>R$ 37,99</td>
+                        <td>R$ 37,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 32,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Espumante Nacional Prosecco Garibaldi 750ml</td>
+                        <td>R$ 32,90</td>
+                        <td>R$ 37,99</td>
+                        <td>R$ 37,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 32,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Extrato de Tomate Só Tomate Elefante 300g</td>
+                        <td>R$ 6,49</td>
+                        <td></td>
+                        <td>R$ 6,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito Agua E Sal Marilan 350g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sabão em Pó Lavagem Perfeita Tamanho Família Omo 4kg</td>
+                        <td>R$ 49,98</td>
+                        <td></td>
+                        <td>R$ 59,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 49,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Limpador Multiuso Gold Original Veja 500ml</td>
+                        <td>R$ 3,98</td>
+                        <td></td>
+                        <td>R$ 6,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Cola Zero Açúcar Pepsi Garrafa 2L</td>
+                        <td>R$ 6,99</td>
+                        <td></td>
+                        <td>R$ 8,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pêssego em Metades em Calda Crochemore 460g</td>
+                        <td>R$ 11,99</td>
+                        <td>R$ 14,79</td>
+                        <td>R$ 13,99</td>
+                        <td class="desconto">5%</td>
+                        <td class="preco-usado">R$ 11,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Suco Pronto Kapo Uva 200ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Milho Verde em Conserva Predilecta-170g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pack Cerveja Lager Heineken Garrafa 330ml com 6 Unidades</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 35,89</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 35,89</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pó para Refresco sabor Uva Frisco 18g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 0,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 0,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Suco de Morango Kapo Del Valle 200ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Coca-Cola Lata 220ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Esponja Multiuso Limpeza Pesada Scotch-Brite Pacote Leve 4 Pague com 3un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pó para Refresco sabor Abacaxi Frisco 18g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 0,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 0,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Lasanha Bolonhesa Perdigão 600g</td>
+                        <td>R$ 11,99</td>
+                        <td></td>
+                        <td>R$ 14,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 11,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pó para Refresco sabor Maracujá Frisco 18g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 0,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 0,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Achocolatado Chocolider 200ml</td>
+                        <td>R$ 1,19</td>
+                        <td></td>
+                        <td>R$ 1,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Amstel Premium Puro Malte Lager 350ml Lata</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Amstel Lager Puro Malte Lata 350ml com 12un</td>
+                        <td>R$ 35,88</td>
+                        <td></td>
+                        <td>R$ 37,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 35,88</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cookies de Chocolate com Gotas de Chocolate Nida 60g</td>
+                        <td>R$ 2,49</td>
+                        <td></td>
+                        <td>R$ 2,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Kit Antitranspirante Above Men Extra Invisible e Black 150ml+ Shampoo Masculino Anticaspas 220ml</td>
+                        <td>R$ 13,90</td>
+                        <td></td>
+                        <td>R$ 15,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Doce de Leite Tirol Pote 350g</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 9,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pó para Refresco sabor Limão Frisco 18g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 0,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 0,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Zero Açúcar Monster Lata 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Maionese Tradicional Hemmer 930g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 16,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 16,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sardinha em Óleo Gomes da Costa Lata 125g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Pena de Sêmola Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Kit Refrigerante Coca-Cola Original + Sprite 2L Cada</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 18,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 18,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sabonete em Barra Limão Siciliano Farnese 85g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 1,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sardinha com Óleo Coqueiro 125g</td>
+                        <td>R$ 4,99</td>
+                        <td></td>
+                        <td>R$ 5,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Pringles Creme e Cebola 109g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 10,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 10,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Margarina Cremosa com Sal Claybom Pote 500g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante sem Açúcar Coca-Cola Pet 600ml</td>
+                        <td>R$ 4,99</td>
+                        <td></td>
+                        <td>R$ 5,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Limpador Multiuso Floral Gold Veja 500ml</td>
+                        <td>R$ 3,98</td>
+                        <td></td>
+                        <td>R$ 6,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Sprite Original Garrafa Pet Sprite 2L</td>
+                        <td>R$ 7,49</td>
+                        <td></td>
+                        <td>R$ 9,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Água de Coco Esterilizada Mais Coco Caixa 1L</td>
+                        <td>R$ 8,49</td>
+                        <td></td>
+                        <td>R$ 9,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito Maizena com Farinha Láctea Marilan 300g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante sem Açúcar Coca-Cola Lata 310ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Linguiça de Frango Fininha Lar 700g</td>
+                        <td>R$ 9,98</td>
+                        <td></td>
+                        <td>R$ 12,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 9,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Coca-Cola Pet 1L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pó para Refresco sabor Morango Frisco 18g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 0,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 0,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sabonete em Barra Antibacteriano Vitamina e Protex 85g 6 un Leve mais Pague menos</td>
+                        <td>R$ 17,99</td>
+                        <td></td>
+                        <td>R$ 18,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 17,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Energética Ultra Monster Energy Lata 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Energética Mango Loco Monster Energy+Juice Lata 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,29</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Maionese Hellmann's 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 10,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 10,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Original Coca-Cola Garrafa 600ml</td>
+                        <td>R$ 4,99</td>
+                        <td></td>
+                        <td>R$ 5,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Amaciante Concentrado Mais Perfume Intenso Downy 1,5L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 28,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 28,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Côco Ralado Desidratado Sococo Pacote 100g</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito Cream Cracker sabor Manteiga Marilan 350g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante sem Açúcar Coca-Cola Pet 1L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Original sem Açúcar Sprite 350ml</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pizza Frango com Bacon e Creme de Requeijão Perdigão Caixa 460g</td>
+                        <td>R$ 13,99</td>
+                        <td></td>
+                        <td>R$ 15,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Farofa Pronta Yoki 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão de Sêmola Caracolino Galo Pacote 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Empanado de Frango Tradicional Perdigão Mini Chicken Pacote 1kg</td>
+                        <td>R$ 19,99</td>
+                        <td></td>
+                        <td>R$ 23,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 19,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Suco Adoçado sabor Abacaxi Del Valle Kapo Embalagem 200ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Spaghetti Veneza 5 com Ovos Todeschini 500g</td>
+                        <td>R$ 2,79</td>
+                        <td></td>
+                        <td>R$ 3,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Laranja Sukita Garrafa 2L</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Ketchup Tradicional Hemmer Squeeze 750g</td>
+                        <td>R$ 12,98</td>
+                        <td></td>
+                        <td>R$ 14,98</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 12,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Sprite Lemon Fresh Pet 1,5L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sardinhas ao Molho de Tomate Gomes Costa 125g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Coca-Cola Lata 310ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Saco para Freezer 2L Bio Plastic com 100un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Tempero Refoga com Alho e Cebola Granulado Meu Segredo Maggi 42g</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pizza Brasileira PERDIGAO 460g</td>
+                        <td>R$ 13,99</td>
+                        <td></td>
+                        <td>R$ 15,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Suco Laranja Kapo 200ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Laranja Zero Açúcar Fanta Lata 350ml</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pipoca para Microondas Manteiga de Cinema Yoki 100g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Skol Pilsen Lata 350m com 12un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 41,88</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 41,88</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito Choco Biscuit Meio Amargo Bauducco 80g</td>
+                        <td>R$ 6,99</td>
+                        <td></td>
+                        <td>R$ 6,89</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,89</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Tempero para Carnes Mais sabor Kitano 60g</td>
+                        <td>R$ 3,99</td>
+                        <td></td>
+                        <td>R$ 4,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sabonete em Barra Antibacteriano Balance Saudável Protex 85g 6 un Leve + Pague -</td>
+                        <td>R$ 17,99</td>
+                        <td></td>
+                        <td>R$ 18,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 17,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Extrato de Tomate Cebola e Alho Elefante Lata 300g</td>
+                        <td>R$ 6,49</td>
+                        <td></td>
+                        <td>R$ 6,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Diet Guaraná Antarctica Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,39</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Limoneto H2Oh Garrafa 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Guaraná Antartctica Pet 2L</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 9,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Esponja Limpeza Extrema Scotch-Brite com 4un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 9,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 9,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Lasanha Frango Perdigão 600g</td>
+                        <td>R$ 11,99</td>
+                        <td></td>
+                        <td>R$ 14,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 11,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Fidelinho 10 Galo Semola 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Chips sabor Cheddar e Bacon Pringles 105g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 10,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 10,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Suco Adoçado sabor Maracujá Del Valle Kapo Embalagem 200ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Desodorante Corporal All Body Deo Spring Glow  Rexona  150ml</td>
+                        <td>R$ 20,90</td>
+                        <td></td>
+                        <td>R$ 26,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 20,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Absolutely Zero Monster Lata 473L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,29</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Amaciante Concentrado Lírios do Campo Downy 1,5L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 28,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 28,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Água de Coco Esterilizada Sococo Caixa 1L</td>
+                        <td>R$ 11,49</td>
+                        <td></td>
+                        <td>R$ 13,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 11,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Desodorante Corporal Aerossol Masculino Ocean Rush All Body Rexona 150ml</td>
+                        <td>R$ 20,90</td>
+                        <td></td>
+                        <td>R$ 26,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 20,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante sem Açúcar Coca-Cola Lata 220ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sabonete em Barra Antibacteriano Aveia Protex 85g 6 un Leve mais Pague Menos</td>
+                        <td>R$ 17,99</td>
+                        <td></td>
+                        <td>R$ 18,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 17,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito Champanhe com Acucar Cristal Bauducco 150g</td>
+                        <td>R$ 8,99</td>
+                        <td></td>
+                        <td>R$ 13,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Aguardente Velho Barreiro 910ml</td>
+                        <td>R$ 13,98</td>
+                        <td></td>
+                        <td>R$ 15,98</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Bavaria Pilsen 350ml Lata</td>
+                        <td>R$ 2,39</td>
+                        <td></td>
+                        <td>R$ 2,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,39</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Desodorante Corporal Aerossol Masculino Fresh Citrus All Body Rexona 150ml</td>
+                        <td>R$ 20,90</td>
+                        <td></td>
+                        <td>R$ 26,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 20,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Tempero Cheiro Verde Granulado Meu Segredo 42g</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Sprite Limão Limão Lata 350ml</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Desodorante Corporal Aerossol Masculino Bold Spirit All Body Rexona 150ml</td>
+                        <td>R$ 20,90</td>
+                        <td></td>
+                        <td>R$ 26,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 20,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico sabor Uva Gatorade 500ml</td>
+                        <td>R$ 4,33</td>
+                        <td></td>
+                        <td>R$ 5,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,33</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Detergente Líquido Coco Ypê 500ml com 6un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 13,74</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,74</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Energética Ultra Fiesta Mango Zero Monster 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pizza Calabresa Moída Perdigão 460g</td>
+                        <td>R$ 13,99</td>
+                        <td></td>
+                        <td>R$ 15,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Limpador Multiuso Campestre Gold Veja Leve 500ml Pague 450ml</td>
+                        <td>R$ 3,98</td>
+                        <td></td>
+                        <td>R$ 6,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Skol Pilsen Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Pringles Churrasco 109g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 10,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 10,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico sabor Limão Gatorade 500ml</td>
+                        <td>R$ 4,33</td>
+                        <td></td>
+                        <td>R$ 5,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,33</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico sabor Laranja Gatorade 500ml</td>
+                        <td>R$ 4,33</td>
+                        <td></td>
+                        <td>R$ 5,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,33</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Guaraná Antarctica Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,39</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Amstel Ultra Lager Malte sem Gluten 269ml</td>
+                        <td>R$ 3,79</td>
+                        <td></td>
+                        <td>R$ 4,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pizza Congelada Napolitana PERDIGAO 460g</td>
+                        <td>R$ 13,99</td>
+                        <td></td>
+                        <td>R$ 15,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Limpador Multiuso Lavanda Gold Veja Leve 500ml Pague 450ml</td>
+                        <td>R$ 3,98</td>
+                        <td></td>
+                        <td>R$ 6,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Limoneto H2OH 1,5L</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 8,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Ave Maria Sêmola Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Coquetel de Vinho Draft Bella Roma lata 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Lava Roupas Líquido Higiene Total Brilhante 3L</td>
+                        <td>R$ 27,98</td>
+                        <td></td>
+                        <td>R$ 31,98</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 27,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Suco Concentrado sabor Maracujá Maguary Garrafa 500ml</td>
+                        <td>R$ 8,99</td>
+                        <td></td>
+                        <td>R$ 11,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Brahma Lata 350ml com 12un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 44,40</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 44,40</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Guaraná Antarctica Garrafa 1,5L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pipoca para Microondas Toque de Chef Yoki 100g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Lasanha de Calabresa Perdigão 600g</td>
+                        <td>R$ 11,99</td>
+                        <td></td>
+                        <td>R$ 14,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 11,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Desinfetante Alecrim Clean Plus 2L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Padre Nosso Sêmola Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Chocolate Wafer Mais ao Leite Hershey's 102g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 5,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Tempero Granulado Tomate e Ervas Meu Segredo Maggi Caixa 49g 7 un</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Crystal Pilsen Lata 350ml com 12un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 31,08</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 31,08</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pipoca Micro-Ondas Natural com Sal Yoki 100g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Mistura para Bolo sabor Chocolate Renata 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Adoçante Líquido Stevia Zero Cal 80ml</td>
+                        <td>R$ 9,99</td>
+                        <td></td>
+                        <td>R$ 14,89</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 9,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Inseticida Aerossol Raid Mata Baratas e Formigas Leve Mais Pague Menos 420ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 17,98</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 17,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pepsi Zero Açúcar Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Batata Pringles Quejo 109g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 9,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 9,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Energética Watermelon Monster 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão de Sêmola Fettuccine Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pipoca para Microondas Manteiga Yoki 100g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Amaciante Roupa Concentrado Frescor de Primavera Downy 1,5L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 28,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 28,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sabonete em Barra Antibacteriano Limpeza Profunda Protex 85g 6 un Leve + Pague -</td>
+                        <td>R$ 17,99</td>
+                        <td></td>
+                        <td>R$ 18,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 17,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pipoca para Microondas Natural Yoki 100g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante de Guaraná Ouro Verde pet 2L</td>
+                        <td>R$ 5,49</td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sardinha em Molho de Tomate Coqueiro 125g</td>
+                        <td>R$ 4,99</td>
+                        <td></td>
+                        <td>R$ 5,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Tubaína Ouro Verde pet 2L</td>
+                        <td>R$ 5,49</td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Aperitivo Bitter Campari Garrafa 748ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 54,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 54,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cereja em Calda Tozzi Vidro 210g</td>
+                        <td>R$ 10,99</td>
+                        <td></td>
+                        <td>R$ 13,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 10,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão de Sêmola Nhoque Galo Pacote 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Energetica Ultra Peachy Keen Monster 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Petra Puro Malte Lata 350ml  com 12un</td>
+                        <td>R$ 33,48</td>
+                        <td></td>
+                        <td>R$ 40,68</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 33,48</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sardinhas com Limão Gomes da Costa 125g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Furadinho 5 de Sêmola Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão de Sêmola Parafusinho Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Chopp Brahma Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,70</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,70</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Maracujá Fanta Lata 350ml</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico Berry Blue Gatorade Garrafa 500ml</td>
+                        <td>R$ 4,33</td>
+                        <td></td>
+                        <td>R$ 5,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,33</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão de Sêmola Concha Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Mistura para Bolo sabor Brigadeiro Renata 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Zero Álcool Budweiser Lata 350ml</td>
+                        <td>R$ 3,99</td>
+                        <td></td>
+                        <td>R$ 4,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Creme de Avelã Edição Especial Nutella 350g</td>
+                        <td>R$ 27,99</td>
+                        <td></td>
+                        <td>R$ 29,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 27,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Linguine com Ovos Todeschini 500g</td>
+                        <td>R$ 2,79</td>
+                        <td></td>
+                        <td>R$ 3,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sabonete em Barra Antibacteriano Menos Carvão Detox Protex 510g com 6un</td>
+                        <td>R$ 17,99</td>
+                        <td></td>
+                        <td>R$ 18,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 17,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Figo em Calda Tozzi Lata 400g</td>
+                        <td>R$ 16,99</td>
+                        <td></td>
+                        <td>R$ 19,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 16,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Spaten Munich Puro Malte Lata 350ml com 12un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 57,48</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 57,48</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Chocolate Wafer Cookies'n'Cream Hershey's 102g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 5,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Amendoim Crocante sabor Cebola e Salsa Pettiz 350g</td>
+                        <td>R$ 12,99</td>
+                        <td></td>
+                        <td>R$ 14,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 12,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Mistura para Bolo Coco Renata Pacote 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Mistura para Bolo sabor Cenoura Renata 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Laranja Fanta Lata 220ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Eisenbahn Pilsen unfiltered 350ml</td>
+                        <td>R$ 3,49</td>
+                        <td></td>
+                        <td>R$ 4,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cadeira Alta Alumínio Mor</td>
+                        <td>R$ 79,90</td>
+                        <td></td>
+                        <td>R$ 89,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 79,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Doce de Leite Pastoso Triângulo 400g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,89</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,89</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Amstel Ultra Lager Malte sem Gluten 275ml</td>
+                        <td>R$ 4,69</td>
+                        <td></td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Pepsi Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Whisky 12 Anos Chivas Regal 1L</td>
+                        <td>R$ 129,90</td>
+                        <td></td>
+                        <td>R$ 169,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 129,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão de Sêmola Espaguetinho 9 Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cappuccino de Doce de Leite Power Whey 3 Corações 250ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Original Sprite Lata 220ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Soda Limonada Zero Antarctica Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Chocolate Wafer Tripo Chocolate Hershey's+ 102g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 5,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão de Sêmola Tortiglione Galo Pacote 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Uva Fanta Lata 220ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante H2Oh Limão Pet 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Energy Drink Zero Açúcar Focus Tnt Lata 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Filtrado Branco Doce Brasileiro Del Sole Garrafa 660ml</td>
+                        <td>R$ 13,90</td>
+                        <td></td>
+                        <td>R$ 16,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Guaraná Mini Fanta 220ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Tempero em Pó Aves Mais sabor Kitano 60g</td>
+                        <td>R$ 3,99</td>
+                        <td></td>
+                        <td>R$ 4,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pipoca para Microondas Bacon Yoki 100g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Mistura para Bolo Limão Renata Pacote 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Água Mineral com Gás Cristal Select 500ml com 12un</td>
+                        <td>R$ 15,48</td>
+                        <td></td>
+                        <td>R$ 16,68</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 15,48</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Mistura para Bolo sabor Laranja Renata 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Limão H2Oh Garrafa 1,5l</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 8,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Suco Adoçado sabor Frutas Cítricas Del Valle Kapo Embalagem 200ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Linguine Sêmola Galo 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,69</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cappuccino Cookies Power Whey 3 Corações 250ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante SUKITA Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Mortadela Perdigão 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Guaraná Antarctica 3L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 11,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 11,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Petra Puro Malte 269ml Lata</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Leite de Coco Sococo 200ml</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 9,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sardinha Ralada em Óleo Defumado Gomes da Costa 125g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Wafer Recheio Amendoim Cobertura Chocolate Hershey's Mais Pacote 102g</td>
+                        <td>R$ 4,49</td>
+                        <td></td>
+                        <td>R$ 5,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cappuccino de Chocolate 3 Corações 260ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Uva Sukita Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Ração Cães Adultos Carne e Vegetal Pedigree 900g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 19,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 19,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Skol Pilsen Lata 269ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,09</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,09</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho de Milho Toque de Pimenta Mexicana Tostitos Pacote 110g</td>
+                        <td>R$ 7,49</td>
+                        <td></td>
+                        <td>R$ 9,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Golden Ale Canela e Frutas Vermelhas Baden Baden Lata 350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,39</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Tempero em Pó Legumes Mais sabor Kitano 60g</td>
+                        <td>R$ 3,99</td>
+                        <td></td>
+                        <td>R$ 4,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Protetor Diário Todo Dia Carefree Leve + Pague - 80 un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 35,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 35,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sardinha ao Molho de Tomate Picante Gomes da Costa 125g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Extra Corona 350ml Lata</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Isotônico Orgânico sabor Tangerina Plant Power Jungle Endurance 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Alcoólica Mista Jack Daniel's Lata 330ml</td>
+                        <td>R$ 8,99</td>
+                        <td></td>
+                        <td>R$ 12,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Baden Baden IPA 350ml Lata</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Vegetal à Base de Castanha de Caju A Tal da Castanha 1L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 24,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 24,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Licor Fino de Whisky Canela Jack Daniel's Fire Garrafa 1L</td>
+                        <td>R$ 139,90</td>
+                        <td></td>
+                        <td>R$ 169,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 139,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sidra Pêssego Cereser 660ml</td>
+                        <td>R$ 19,90</td>
+                        <td></td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 19,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Caixa Térmica Vermelha Tropical Soprano 32L</td>
+                        <td>R$ 79,90</td>
+                        <td></td>
+                        <td>R$ 89,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 79,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Mistura para Bolo Fubá Renata Pacote 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Chinelo Feminino Ipanema Class Fine</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 25,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 25,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Copo Transparente Totalplast 300ml com 100un</td>
+                        <td>R$ 8,99</td>
+                        <td></td>
+                        <td>R$ 10,89</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Budweiser Zero Sleek Lata 350ml com 8un</td>
+                        <td>R$ 31,92</td>
+                        <td></td>
+                        <td>R$ 35,12</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 31,92</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Crystal Lata350ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Coco e Açaí Red Bull 250ml</td>
+                        <td>R$ 31,96</td>
+                        <td></td>
+                        <td>R$ 35,96</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 31,96</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Energético Maçã Verde Zero Açúcar TNT Lata 473ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Abacaxi em Calda Tozzi 400g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 21,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho sabor Ketchup Doritos Elma Chips 110g</td>
+                        <td>R$ 10,99</td>
+                        <td></td>
+                        <td>R$ 14,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 10,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Parafuso Floriani 1kg</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Salgadinho de Batata sabor Pizza Marguerita Pringles 105g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 9,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 9,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Isotônica sabor Morango com Limão Jungle 500ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Mista Tropical Skol Beats Long Neck 269ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,23</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,23</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Pilsen Budweiser Long Neck 330ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,79</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Amstel Premium Puro Malte Lager 269ml Lata</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 2,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Spaten One Way Puro Malte 600ml Garrafa</td>
+                        <td>R$ 7,99</td>
+                        <td></td>
+                        <td>R$ 9,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Pilsen Chopp Brahma Lata 269ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,09</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,09</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Escova de Cabelo Plana Verde Condor Belle un</td>
+                        <td>R$ 8,90</td>
+                        <td></td>
+                        <td>R$ 10,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Peach Baden Baden Lata 350ml</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Belgium White Blue Moon 355ml Garrafa</td>
+                        <td>R$ 9,99</td>
+                        <td></td>
+                        <td>R$ 11,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 9,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sidra Cereser Maçã 660ml</td>
+                        <td>R$ 19,90</td>
+                        <td></td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 19,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sopão de Carne com Macarrão Kitano 196g</td>
+                        <td>R$ 8,90</td>
+                        <td></td>
+                        <td>R$ 9,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Láctea UHT Cappuccino Clássico Zero Lactose 3 Corações Power Frasco 260ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,29</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Mista Alcoólica Gaseificada Ice Cabaré Garrafa 275ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 9,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 9,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Amer Ipa Eisenbahn Long Neck 355ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Baden Baden Trigo Witbier 350ml Lata</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Chinelo Oasis Ipanema 34/40</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 36,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 36,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Kit Shampoo + Condicionador Hidra Coco Salon Line 300ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 23,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 23,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cereal Choco Krispis Kelloggs 100g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,29</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Estrella Galicia Malte 355ml Long Neck</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 6,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cappuccino Classic 3 Corações 260ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,19</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,19</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sandália Top Preto Havaianas 39/40</td>
+                        <td>R$ 24,90</td>
+                        <td></td>
+                        <td>R$ 35,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 24,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Trufa de Chocolate Suíço ao Leite Cremoso Lindor Lindt 112g</td>
+                        <td>R$ 49,99</td>
+                        <td></td>
+                        <td>R$ 55,89</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 49,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sandália Top Rose Gold Havaianas 35/36</td>
+                        <td>R$ 24,90</td>
+                        <td></td>
+                        <td>R$ 35,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 24,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Baden Baden Pilsen Cristal 350ml Lata</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 6,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Baden Baden Peach 600ml Garrafa</td>
+                        <td>R$ 13,99</td>
+                        <td></td>
+                        <td>R$ 14,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Eisenbahn unfiltered 355ml Long Neck</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,39</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Fanta Pet 600ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 4,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 4,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Láctea Power Whey Cappuccino 3 Corações 250ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,59</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,59</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante Uva Fanta Lata 350ml</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,69</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Ave Maria com Ovos Todeschini 500g</td>
+                        <td>R$ 2,79</td>
+                        <td></td>
+                        <td>R$ 3,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,79</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Brahma Pilsen Zero Álcool 350ml Lata</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 3,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 3,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Refrigerante de Laranja Ouro Verde pet 2L</td>
+                        <td>R$ 5,49</td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,49</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Achocolatado Liquido Uht Choco Milk Batavo 200ml</td>
+                        <td>R$ 1,99</td>
+                        <td></td>
+                        <td>R$ 2,29</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Biscoito sabor Manteiga Marilan 300g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pessego em Calda Fatias Schramm 450g</td>
+                        <td>R$ 11,99</td>
+                        <td></td>
+                        <td>R$ 13,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 11,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Seleta de Legumes Stella D'oro 170g</td>
+                        <td>R$ 2,99</td>
+                        <td></td>
+                        <td>R$ 3,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 2,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Adoçante Dietético com Stevia Lowçúcar Plus Frasco 80ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 13,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,39</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Sol Premium Long Neck 330ml com 6un</td>
+                        <td>R$ 27,54</td>
+                        <td></td>
+                        <td>R$ 35,94</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 27,54</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Eisenbahn Puro Malte Unfiltered Lata 350ml com 12un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 50,28</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 50,28</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sabonete Fresh Protex 85g com 6un</td>
+                        <td>R$ 17,99</td>
+                        <td></td>
+                        <td>R$ 18,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 17,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bombom Prestígio Sortidos Nestlé 252g</td>
+                        <td>R$ 17,98</td>
+                        <td></td>
+                        <td>R$ 16,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 16,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Donuts Recheado de Creme 70g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 7,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 7,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Filtrado Rosé Doce Collina Del Sole 660ml</td>
+                        <td>R$ 13,90</td>
+                        <td></td>
+                        <td>R$ 16,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pack Fanta Laranja Mini lata 220ml com 6un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 16,14</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 16,14</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Amendoim Natural Crocante Pettiz ao Forno Dori 350g</td>
+                        <td>R$ 12,99</td>
+                        <td></td>
+                        <td>R$ 14,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 12,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Mistura para Bolo Aipim Renata 400g</td>
+                        <td>R$ 5,99</td>
+                        <td></td>
+                        <td>R$ 7,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Pack Energético Red Bull Melância Lata 250ml com 4un</td>
+                        <td>R$ 31,96</td>
+                        <td></td>
+                        <td>R$ 35,96</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 31,96</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Conjunto de Potes Sanremo 1,5L Leve 3 Pague 2</td>
+                        <td>R$ 19,90</td>
+                        <td></td>
+                        <td>R$ 26,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 19,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Premium Sol 600ml</td>
+                        <td>R$ 6,99</td>
+                        <td></td>
+                        <td>R$ 9,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 6,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Eisenbahn Pilsen Malte 355ml Long Neck</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 5,39</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 5,39</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Azeitona Verde com Caroço Nucete 500g</td>
+                        <td>R$ 18,90</td>
+                        <td></td>
+                        <td>R$ 16,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 16,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida Vegetal de Castanha de Caju e Aveia Barista A Tal da Castanha 1L</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 24,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 24,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sandália Arizona Cartago 37 ao 44</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 69,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 69,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Corona Extra Lata 350ml com 8un</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 47,92</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 47,92</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sandália Havaianas Top Lisa Azul Naval 39/40</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 35,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 35,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Bebida de Limão Ice Drink 275ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 1,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 1,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Macarrão Oriental de Arroz Bifum 500g</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 23,98</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 23,98</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Chinelo Tradicional Preto Havaianas 39/40</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 33,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 33,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Baden Baden Trigo Witbier 600ml Garrafa</td>
+                        <td>R$ 13,99</td>
+                        <td></td>
+                        <td>R$ 14,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Torta Holandesa Miss Daisy Sadia 470g</td>
+                        <td>R$ 29,99</td>
+                        <td></td>
+                        <td>R$ 34,49</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 29,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sidra Uva Cereser 660ml</td>
+                        <td>R$ 19,90</td>
+                        <td></td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 19,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Japas Black Matsurika Czech Dark 310ml</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 8,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Chinelo Street Infantil Rider 28/36</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 42,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 42,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sidra Morango Cereser 660ml</td>
+                        <td>R$ 19,90</td>
+                        <td></td>
+                        <td>R$ 21,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 19,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Cerveja Baden Baden Pilsen Cristal 600ml Garrafa</td>
+                        <td>R$ 13,99</td>
+                        <td></td>
+                        <td>R$ 14,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 13,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sopão Galinha Kitano 196g</td>
+                        <td>R$ 8,90</td>
+                        <td></td>
+                        <td>R$ 9,90</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 8,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sandália Ipanema Grenda Mais Açaí Energia 35/44</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 42,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 42,99</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sandália Havaianas Top Lisa Preta 35/6</td>
+                        <td>R$ 24,90</td>
+                        <td></td>
+                        <td>R$ 35,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 24,90</td>
+                    </tr>
+
+                    <tr>
+                        <td class="col-nome">Sandália Havaianas Top Lisa Preta 41/2</td>
+                        <td></td>
+                        <td></td>
+                        <td>R$ 35,99</td>
+                        <td class="desconto"></td>
+                        <td class="preco-usado">R$ 35,99</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script>
+    function obterValorNumerico(texto) {
+        if (!texto) return 0;
+        return parseFloat(
+            texto.replace("R$", "")
+                 .replace(/\./g, "")
+                 .replace(",", ".")
+                 .trim()
+        ) || 0;
+    }
+
+    function ordenarTabela(comparador) {
+        const tabela = document.getElementById("tabela");
+        const tbody = tabela.querySelector("tbody");
+        const linhas = Array.from(tbody.querySelectorAll("tr"));
+
+        linhas.sort(comparador);
+
+        linhas.forEach(linha => tbody.appendChild(linha));
+    }
+
+    function ordenarDesconto() {
+        const info = document.getElementById("info-ordem");
+        ordenarTabela((a, b) => {
+            const ta = a.querySelector(".desconto")?.textContent || "0";
+            const tb = b.querySelector(".desconto")?.textContent || "0";
+
+            const va = parseFloat(ta.replace("%", "").trim()) || 0;
+            const vb = parseFloat(tb.replace("%", "").trim()) || 0;
+
+            // maior desconto primeiro
+            return vb - va;
+        });
+        if (info) {
+            info.innerHTML = 'Listando por: <strong>Maior desconto</strong>';
+        }
+    }
+
+    function ordenarPreco() {
+        const info = document.getElementById("info-ordem");
+        ordenarTabela((a, b) => {
+            // aqui você escolhe QUAL coluna usar:
+            // 1) preço novo (quarta coluna)
+            const ta = a.children[3].textContent;
+            const tb = b.children[3].textContent;
+
+            // se quiser usar "Menor valor", troque 3 por 5:
+            // const ta = a.children[5].textContent;
+            // const tb = b.children[5].textContent;
+
+            const va = obterValorNumerico(ta);
+            const vb = obterValorNumerico(tb);
+
+            // menor valor primeiro
+            return va - vb;
+        });
+        if (info) {
+            info.innerHTML = 'Listando por: <strong>Menor valor</strong>';
+        }
+    }
+
+    // DESATIVADO DURANTE TESTES opcional: ordenar por maior desconto ao carregar
+    // document.addEventListener("DOMContentLoaded", ordenarDesconto);
+    </script>
+
+    <script> 
+        // FILTRAR TABELA ENQUANTO DIGITA 
+        document.getElementById("busca").addEventListener("input", function () { 
+            const termo = this.value.toLowerCase(); 
+            const linhas = document.querySelectorAll("#tabela tbody tr"); 
+            
+            linhas.forEach(linha => { 
+                const textoLinha = linha.textContent.toLowerCase(); 
+                linha.style.display = textoLinha.includes(termo) ? "" : "none"; 
+            }); 
+        }); 
+    </script>
+    
+</body>
+</html>
