@@ -1,17 +1,21 @@
-DEBUG = True  # coloque False para desativar
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 from bs4 import BeautifulSoup
 from classificacao import detectar_categoria
 import os
 
+from dotenv import load_dotenv 
+load_dotenv()
 # ============================================================
-# SISTEMA DE LOG
+# DEBUG
 # ============================================================
 
+DEBUG = False
 debug_log = open("debug_log.txt", "w", encoding="utf-8")
 
 def debug_print(*args):
@@ -33,118 +37,144 @@ def debug_html_bs4(element, idx):
         debug_log.write(html + "\n")
         debug_print("===== FIM HTML =====\n")
 
+load_dotenv()
 
 # ============================================================
 # FUNÇÃO PRINCIPAL
 # ============================================================
 
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+from bs4 import BeautifulSoup
+import os
+
 def extrair_produtos():
-    options = Options()
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--headless=new")  # modo headless moderno
+    # Inicializa o driver
+    driver = webdriver.Chrome()
+    driver.maximize_window()
 
-    driver = webdriver.Chrome(options=options)
-
-    url = "https://www.amigao.com/s/?clubProducts"
-    debug_print("[DEBUG] Acessando URL:", url)
-    driver.get(url)
-    time.sleep(3)
-
-    debug_screenshot(driver, "pagina_inicial")
-
-    # Fechar pop-up de cookies se aparecer
     try:
-        botao_consentimento = driver.find_element(By.CSS_SELECTOR, "button.modal-cookies-agree")
-        botao_consentimento.click()
+        # Abre página de login
+        driver.get("https://secure.amigao.com/login")
+        WebDriverWait(driver, 20).until(
+            EC.visibility_of_element_located((By.CSS_SELECTOR, ".vtex-login-2-x-inputContainerEmail input"))
+        )
+
+        # Campo de e-mail
+        campo_email = driver.find_element(By.CSS_SELECTOR, ".vtex-login-2-x-inputContainerEmail input")
+        campo_email.clear()
+        campo_email.send_keys(os.environ.get("AMIGAO_EMAIL"))
+
+        # Campo de senha
+        campo_senha = driver.find_element(By.CSS_SELECTOR, ".vtex-login-2-x-inputContainerPassword input")
+        campo_senha.clear()
+        campo_senha.send_keys(os.environ.get("AMIGAO_SENHA"))
+
+        # Botão Entrar
+        botao_entrar = driver.find_element(By.XPATH, "//button[.//span[text()='Entrar']]")
+        botao_entrar.click()
+
+        time.sleep(5)  # espera login
+
+        # ============================================================
+        # ACESSAR PÁGINA DE PRODUTOS
+        # ============================================================
+
+        url = "https://www.amigao.com/s/?clubProducts"   # ou outra URL de categoria/busca
+        debug_print("[DEBUG] Acessando URL:", url)
+        driver.get(url)
         time.sleep(2)
-        debug_print("[DEBUG] Pop-up de cookies fechado")
-    except:
-        debug_print("[DEBUG] Nenhum pop-up de cookies encontrado")
 
-    # Clicar em "Mostrar Mais" até não existir mais
-    while True:
+        debug_screenshot(driver, "pagina_inicial")
+
+        # Fechar pop-up de cookies se aparecer
         try:
-            botao = driver.find_element(By.CSS_SELECTOR, "a[data-testid='show-more']")
-            botao.click()
-            debug_print("[DEBUG] Clique em 'Mostrar Mais'")
-            time.sleep(3)
+            botao_consentimento = driver.find_element(By.CSS_SELECTOR, "button.modal-cookies-agree")
+            botao_consentimento.click()
+            time.sleep(1)
+            debug_print("[DEBUG] Pop-up de cookies fechado")
         except:
-            debug_print("[DEBUG] Não há mais 'Mostrar Mais'")
-            break
+            debug_print("[DEBUG] Nenhum pop-up de cookies encontrado")
 
-    debug_screenshot(driver, "pagina_final")
+        time.sleep(10)
 
-    # Extrair HTML final
-    html = driver.page_source
-    driver.quit()
+        # Lista de seletores possíveis para botões de pop-up
+        seletores_popups = [
+            "button.modal-cookies-agree",          # cookies
+            "button.bonus-popup-close",            # exemplo: fechar bônus
+            "button[data-testid='close-promo']",   # exemplo: fechar promoções
+        ]
 
-    soup = BeautifulSoup(html, "html.parser")
-
-    cards = soup.select(".product-card")
-    debug_print(f"[DEBUG] Total de produtos encontrados: {len(cards)}")
-
-    produtos = []
-
-    # ============================================================
-    # LOOP DOS PRODUTOS
-    # ============================================================
-
-    for idx, item in enumerate(cards, start=1):
-
-        # HTML bruto do produto
-        debug_html_bs4(item, idx)
-
-        nome = item.select_one(".product-card-name")
-        desconto = item.select_one(".product-card-discount-badge-value")
-        preco_clube = item.select_one(".product-card-club-price")
-        preco_antigo = item.select_one(".product-card-old-price span")
-        preco_novo = item.select_one(".product-card-new-price")
-
-        nome_texto = nome.get_text(strip=True) if nome else "Sem nome"
-
-        # Converter desconto
-        desconto_valor = 0
-        if desconto:
-            txt = desconto.get_text(strip=True)
+        for seletor in seletores_popups:
             try:
-                desconto_valor = int(txt.replace("%", "").strip()) if "%" in txt else 0
+                botao = WebDriverWait(driver, 3).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, seletor))
+                )
+                botao.click()
+                debug_print(f"[DEBUG] Pop-up fechado: {seletor}")
+                time.sleep(1)
             except:
-                desconto_valor = 0
+                debug_print(f"[DEBUG] Nenhum pop-up encontrado para seletor: {seletor}")
 
-        # Debug dos valores capturados
-        debug_print(f"\n===== PRODUTO #{idx} =====")
-        debug_print("Nome:", nome_texto)
-        debug_print("Desconto:", desconto.get_text(strip=True) if desconto else "")
-        debug_print("Preço Clube:", preco_clube.get_text(strip=True) if preco_clube else "")
-        debug_print("Preço Antigo:", preco_antigo.get_text(strip=True) if preco_antigo else "")
-        debug_print("Preço Novo:", preco_novo.get_text(strip=True) if preco_novo else "")
-        debug_print("==============================")
+        # ✅ Clicar em "Mostrar Mais" até acabar
+        while True:
+            try:
+                botao = WebDriverWait(driver, 5).until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, "a[data-testid='show-more']"))
+                )
+                botao.click()
+                debug_print("[DEBUG] Clique em 'Mostrar Mais'")
+                time.sleep(2)  # dá tempo para carregar os novos produtos
+            except:
+                debug_print("[DEBUG] Não há mais 'Mostrar Mais'")
+                break
 
-        categoria = detectar_categoria(nome_texto)
+        debug_screenshot(driver, "pagina_final")
 
-        produtos.append({
-            "nome": nome_texto,
-            "desconto": desconto.get_text(strip=True) if desconto else "",
-            "desconto_valor": desconto_valor,
-            "preco_clube": preco_clube.get_text(strip=True).replace(" no + Amigo", "") if preco_clube else "",
-            "preco_antigo": preco_antigo.get_text(strip=True) if preco_antigo else "",
-            "preco_novo": preco_novo.get_text(strip=True) if preco_novo else "Sem preço",
-            "categoria": categoria
-        })
+        with open("produtos.txt", "w", encoding="utf-8") as f:
+            for p in produtos:
+                linha = f"{p['nome']} | Clube: {p['preco_clube']} | Antigo: {p['preco_antigo']} | Novo: {p['preco_novo']} | Desconto: {p['desconto']} | Categoria: {p['categoria']}\n"
+                f.write(linha)
 
-    if DEBUG:
-        debug_log.close()
-
-    return produtos
+        print("[DEBUG] Arquivo 'produtos.txt' gerado com", len(produtos), "produtos")
 
 
-# ============================================================
-# TESTE DIRETO
-# ============================================================
+        # Extrair HTML final (agora com todos os produtos carregados)
+        html = driver.page_source
+        soup = BeautifulSoup(html, "html.parser")
 
-if __name__ == "__main__":
-    lista = extrair_produtos()
-    print("\n===== PRIMEIROS 10 PRODUTOS =====")
-    for p in lista[:10]:
-        print(p["nome"], "=>", p["categoria"])
+
+        # Extrai produtos
+        cards = soup.select(".product-card")
+        print(f"[DEBUG] Total de produtos encontrados: {len(cards)}")
+
+        produtos = []
+        for card in cards:
+            nome = card.select_one(".product-card-name")
+            preco_clube = card.select_one(".product-card-club-price")
+            preco_antigo = card.select_one(".product-card-old-price span")
+            preco_novo = card.select_one(".product-card-new-price")
+            desconto = card.select_one(".product-card-discount-badge-value")
+
+            # Se não tiver nome, pula
+            if not nome:
+                continue
+
+            produtos.append({
+                "nome": nome.get_text(strip=True),
+                "preco_clube": preco_clube.get_text(strip=True) if preco_clube else "",
+                "preco_antigo": preco_antigo.get_text(strip=True) if preco_antigo else "",
+                "preco_novo": preco_novo.get_text(strip=True) if preco_novo else "",
+                "desconto": desconto.get_text(strip=True) if desconto else "",
+                "promocao": "Mais Amigo" if card.select_one(".product-club-badge") else ""
+            })
+
+
+
+        return produtos
+
+    finally:
+        driver.quit()

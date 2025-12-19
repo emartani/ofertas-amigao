@@ -6,8 +6,9 @@ def gerar_tabela(produtos, arquivo="index.html"):
     data_atual = datetime.now().strftime("%d/%m/%Y %H:%M")
 
     # Ordenação inicial: maior desconto
-    produtos_ordenados = sorted(produtos, key=lambda x: -x["desconto_valor"])
-
+    # produtos_ordenados = sorted(produtos, key=lambda x: -x["desconto_valor"])
+    produtos_ordenados = produtos # mantém a ordem original da API
+    
     # ============================
     # CSS (agora sem f-string!)
     # ============================

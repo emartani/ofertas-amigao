@@ -1,10 +1,10 @@
-from scraper_amigao import get_all_products
+from scraper import extrair_produtos
 from paginas import gerar_tabela
 import os
 import webbrowser
 
 def main():
-    produtos = get_all_products()
+    produtos = extrair_produtos()
     arquivo = gerar_tabela(produtos)
 
     caminho = os.path.abspath(arquivo) 
