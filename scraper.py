@@ -1,4 +1,4 @@
-DEBUG = True  # coloque False para desativar
+DEBUG = False  # coloque False para desativar
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -49,7 +49,7 @@ def extrair_produtos():
     url = "https://www.amigao.com/s/?clubProducts"
     debug_print("[DEBUG] Acessando URL:", url)
     driver.get(url)
-    time.sleep(45)
+    time.sleep(50)
 
     debug_screenshot(driver, "pagina_inicial")
 
@@ -62,17 +62,34 @@ def extrair_produtos():
     except:
         debug_print("[DEBUG] Nenhum pop-up de cookies encontrado")
 
-
     # Clicar em "Mostrar Mais" até não existir mais
+    from selenium.common.exceptions import TimeoutException
+
+    produtos_anteriores = 0
     while True:
         try:
             botao = driver.find_element(By.CSS_SELECTOR, "a[data-testid='show-more']")
             botao.click()
-            debug_print("[DEBUG] Clique em 'Mostrar Mais'")
             time.sleep(3)
-        except:
+
+            # conta produtos atuais
+            html = driver.page_source
+            soup = BeautifulSoup(html, "html.parser")
+            cards = soup.select(".product-card")
+            total = len(cards)
+
+            if total == produtos_anteriores:
+                debug_print("[DEBUG] Nenhum produto novo carregado, encerrando loop")
+                break
+            produtos_anteriores = total
+
+        except TimeoutException:
+            debug_print("[DEBUG] Timeout - não há mais botão")
+            break
+        except Exception:
             debug_print("[DEBUG] Não há mais 'Mostrar Mais'")
             break
+
 
     debug_screenshot(driver, "pagina_final")
 

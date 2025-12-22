@@ -433,5 +433,3 @@ def gerar_tabela(produtos, arquivo="index.html"):
         f.write(html)
 
     return arquivo
-
-
